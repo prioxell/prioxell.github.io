@@ -53,4 +53,39 @@ header h1 {
     background-color: #4e3629; /* Dark mud color */
     color: #f4f4e5; /* Light mud color */
     width: 200px;
-    padding:
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.vision-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Blog content */
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h2 {
+    font-size: 24px;
+    color: #4e3629; /* Dark mud color */
+}
+
+.blog-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    background-color: #3b6e3d; /* Deep green */
+    color: #f4f4e5; /* Light mud color */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
