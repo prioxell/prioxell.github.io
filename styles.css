@@ -4,6 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #f5f5f5;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in on page load */
 }
 
 /* Header styling */
@@ -12,11 +13,13 @@ header {
     padding: 20px 0;
     text-align: center;
     color: #f4f4e5; /* Light mud color */
+    animation: slideInFromTop 1.2s ease-out; /* Slide in from top */
 }
 
 header h1 {
     font-size: 36px;
     margin: 0;
+    animation: textFadeIn 2s ease-in-out; /* Header text fade-in */
 }
 
 .tagline {
@@ -29,6 +32,7 @@ header h1 {
 .vision-section {
     padding: 50px 0;
     background-color: #f9f5f0; /* Soft mud color */
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .container {
@@ -49,6 +53,7 @@ header h1 {
     font-size: 20px;
     color: #7f8c8d;
     margin-bottom: 50px;
+    animation: fadeInUp 1s ease-out; /* Fade-in with upward motion */
 }
 
 /* Vision cards */
@@ -63,12 +68,19 @@ header h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect animation */
+}
+
+.vision-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .vision-card h3 {
     color: #3b6e3d; /* Green */
     font-size: 24px;
     margin-bottom: 15px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .vision-card p {
@@ -82,8 +94,48 @@ footer {
     color: #f4f4e5; /* Light mud color */
     padding: 20px 0;
     text-align: center;
+    animation: fadeInUp 1.5s ease;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes textFadeIn {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #f4f4e5;
+    }
 }
