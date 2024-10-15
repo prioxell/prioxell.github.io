@@ -1,27 +1,92 @@
-/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-h1, h2, h3 {
-  font-weight: normal;
+header {
+    background: linear-gradient(to right, #000, #555);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  #products, #benefits {
-    flex-direction: column;
+nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-  }
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.explore-btn {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.service-card .btn {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.insight {
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
 }
