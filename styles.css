@@ -1,91 +1,74 @@
-/* General styling */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prioxell</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Prioxell</div>
+            <ul class="nav-links">
+                <li><a href="#focus">Focus</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Empowering You to Organize, Take Action, and Excel</h1>
+            <a href="#products" class="cta-button">Explore Our Products</a>
+        </div>
+    </header>
 
-/* Header styling */
-header {
-    background-color: #3b6e3d; /* Deep green */
-    padding: 20px 0;
-    text-align: center;
-    color: #f4f4e5; /* Light mud color */
-}
+    <section id="focus">
+        <h2>Your Path to Productivity</h2>
+        <p>At Prioxell, we help you streamline your journey to success.</p>
+    </section>
 
-header h1 {
-    font-size: 36px;
-    margin: 0;
-}
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-card">
+            <img src="images/product1.jpg" alt="Wooden To-Do List Holder">
+            <h3>Wooden To-Do List Holder</h3>
+            <p>A stylish tool to enhance your daily productivity.</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+        <!-- Add more product cards as needed -->
+    </section>
 
-.tagline {
-    font-size: 18px;
-    margin-top: 5px;
-    font-style: italic;
-}
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Research-Backed Methods</li>
+            <li>Free Guidance</li>
+            <li>Weekly Articles</li>
+            <li>Personal Assistance</li>
+        </ul>
+    </section>
 
-/* Vision section */
-.vision-section {
-    padding: 50px 0;
-}
+    <section id="blog">
+        <h2>Latest Articles</h2>
+        <div class="blog-post">
+            <h3>How to Master Your Productivity</h3>
+            <p>Discover tips to enhance your productivity with our tools.</p>
+            <a href="#" class="cta-button">Read More</a>
+        </div>
+        <!-- Add more blog posts as needed -->
+    </section>
 
-.vision-section h2 {
-    text-align: center;
-    font-size: 28px;
-    color: #4e3629; /* Dark mud color */
-}
+    <footer>
+        <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
 
-.intro-text {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-/* Vision cards */
-.vision-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.vision-card {
-    background-color: #4e3629; /* Dark mud color */
-    color: #f4f4e5; /* Light mud color */
-    width: 200px;
-    padding: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 10px;
-    transition: transform 0.3s;
-}
-
-.vision-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Blog content */
-.blog-content {
-    padding: 20px;
-}
-
-.blog-content h2 {
-    font-size: 24px;
-    color: #4e3629; /* Dark mud color */
-}
-
-.blog-content p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Footer styling */
-footer {
-    background-color: #3b6e3d; /* Deep green */
-    color: #f4f4e5; /* Light mud color */
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    <script src="script.js"></script>
+</body>
+</html>
