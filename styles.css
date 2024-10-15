@@ -1,74 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prioxell</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Prioxell</div>
-            <ul class="nav-links">
-                <li><a href="#focus">Focus</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Empowering You to Organize, Take Action, and Excel</h1>
-            <a href="#products" class="cta-button">Explore Our Products</a>
-        </div>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section id="focus">
-        <h2>Your Path to Productivity</h2>
-        <p>At Prioxell, we help you streamline your journey to success.</p>
-    </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-card">
-            <img src="images/product1.jpg" alt="Wooden To-Do List Holder">
-            <h3>Wooden To-Do List Holder</h3>
-            <p>A stylish tool to enhance your daily productivity.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
-        <!-- Add more product cards as needed -->
-    </section>
+header {
+    background: #243D33; /* Deep Green */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Research-Backed Methods</li>
-            <li>Free Guidance</li>
-            <li>Weekly Articles</li>
-            <li>Personal Assistance</li>
-        </ul>
-    </section>
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
-    <section id="blog">
-        <h2>Latest Articles</h2>
-        <div class="blog-post">
-            <h3>How to Master Your Productivity</h3>
-            <p>Discover tips to enhance your productivity with our tools.</p>
-            <a href="#" class="cta-button">Read More</a>
-        </div>
-        <!-- Add more blog posts as needed -->
-    </section>
+.nav-links {
+    list-style: none;
+    display: flex;
+}
 
-    <footer>
-        <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
+.nav-links li {
+    margin-left: 20px;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.nav-links a {
+    color: #00C832; /* Vibrant Green */
+    text-decoration: none;
+}
+
+.hero {
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #00C832; /* Vibrant Green */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #E0E0E0; /* Soft Gray */
+    border-radius: 5px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #F5F5DC; /* Light Beige */
+    color: #243D33; /* Deep Green */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
