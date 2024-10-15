@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red , yellow);
     color: #333333;
 }
 
