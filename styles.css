@@ -1,92 +1,149 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(to right, #000, #555);
+    background: linear-gradient(90deg, #000, #444);
     color: white;
-    padding: 20px;
+    padding: 30px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 nav .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    padding: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
 }
 
 .hero {
     margin-top: 20px;
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('path_to_hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .explore-btn {
     background-color: #6c63ff;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #5348d4;
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     margin: 20px;
     background: white;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .service-card {
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
     text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-card .btn {
     background-color: #6c63ff;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background-color: #5348d4;
 }
 
 .insight {
-    margin: 15px 0;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #6c63ff;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #333;
     color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #fff;
 }
