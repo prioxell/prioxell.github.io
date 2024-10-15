@@ -3,30 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Blocking & Time Batching - Prioxell</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Prioxell - Productivity & Products, empowering your daily life.">
+    <title>Prioxell - Productivity & Products</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 4em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .hero .btn {
+            padding: 10px 20px;
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .blog-list,
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .blog-post, .product {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #ff4500;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Time Blocking & Time Batching</h1>
-        <p class="tagline">Boost Your Productivity with Structured Time Management</p>
+        <div class="container">
+            <div class="logo">
+                <h1>Prioxell</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#productivity">Productivity Tips</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="blog-content">
+    <!-- Home Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <h2>Understanding Time Blocking</h2>
-            <p>Time blocking is a productivity technique where you divide your day into blocks of time, each dedicated to a specific task or group of tasks...</p>
-
-            <h2>Time Batching for Efficiency</h2>
-            <p>Time batching involves grouping similar tasks together and completing them all at once. This reduces context switching and increases focus...</p>
-
-            <!-- Add more content as needed -->
+            <h2>Empower Your Productivity</h2>
+            <p>At Prioxell, we provide content, products, and tips to elevate your productivity and bring organization to your life.</p>
+            <a href="#blogs" class="btn">Explore Our Blogs</a>
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section id="blogs" class="section">
+        <div class="container">
+            <h2>Latest Blogs</h2>
+            <div class="blog-list">
+                <article class="blog-post">
+                    <h3>How to Create Effective To-Do Lists</h3>
+                    <p>Learn how simple to-do lists can drastically improve your productivity and keep you organized.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+
+                <article class="blog-post">
+                    <h3>Top Productivity Apps for 2024</h3>
+                    <p>Explore the best apps that can boost your daily productivity and help you manage your tasks more efficiently.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+
+                <article class="blog-post">
+                    <h3>5 Habits of Highly Productive People</h3>
+                    <p>Discover the key habits practiced by the world’s most productive individuals.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productivity Tips Section -->
+    <section id="productivity" class="section">
+        <div class="container">
+            <h2>Productivity Tips</h2>
+            <div class="tips">
+                <div class="tip">
+                    <h3>Prioritize Your Tasks</h3>
+                    <p>Use the Eisenhower Matrix to determine what is urgent and important in your life.</p>
+                </div>
+                <div class="tip">
+                    <h3>Break Tasks into Smaller Steps</h3>
+                    <p>Dividing big projects into smaller, actionable steps helps reduce overwhelm and increases completion rates.</p>
+                </div>
+                <div class="tip">
+                    <h3>Practice the 2-Minute Rule</h3>
+                    <p>If a task takes less than two minutes, do it right away. This helps clear small items off your list quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2>Our Productivity Tools</h2>
+            <div class="product-list">
+                <div class="product">
+                    <h3>Productivity Planner</h3>
+                    <p>Our custom-designed planner helps you track your goals, manage tasks, and stay focused every day.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="product">
+                    <h3>Time Tracker</h3>
+                    <p>A time management tool designed to help you optimize every hour of your day.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="product">
+                    <h3>Focus Booster</h3>
+                    <p>Minimize distractions and improve focus with our specialized productivity apps.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to collaborate, feel free to reach out to us!</p>
+            <form action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
+        <div class="container">
+            <p>© 2024 Prioxell. All Rights Reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
