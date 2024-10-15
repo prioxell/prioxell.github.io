@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prioxell</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prioxell - Premium Productivity Tools</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Prioxell</div>
-            <ul class="nav-links">
-                <li><a href="#focus">Focus</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Empowering You to Organize, Take Action, and Excel</h1>
-            <a href="#products" class="cta-button">Explore Our Products</a>
-        </div>
-    </header>
 
-    <section id="focus">
-        <h2>Your Path to Productivity</h2>
-        <p>At Prioxell, we help you streamline your journey to success.</p>
-    </section>
+  <!-- Navbar -->
+  <nav style="background-color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <a href="#hero" style="color: #6B8E23; text-decoration: none; margin-right: 20px;">Home</a>
+      <a href="#products" style="color: #6B8E23; text-decoration: none; margin-right: 20px;">Products</a>
+      <a href="#blog" style="color: #6B8E23; text-decoration: none;">Blog</a>
+    </div>
+    <div>
+      <a href="https://wa.me/yourwhatsapplink" style="background-color: #FFD700; padding: 10px 20px; color: white; text-decoration: none;">Order via WhatsApp</a>
+    </div>
+  </nav>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-card">
-            <img src="images/product1.jpg" alt="Wooden To-Do List Holder">
-            <h3>Wooden To-Do List Holder</h3>
-            <p>A stylish tool to enhance your daily productivity.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
-        <!-- Add more product cards as needed -->
-    </section>
+  <!-- Hero Section -->
+  <section id="hero" style="background-image: url('path_to_your_image.jpg'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: center;">
+      <h1 style="color: #6B8E23; font-size: 3em;">Premium Productivity Tools</h1>
+      <a href="https://wa.me/yourwhatsapplink" style="background-color: #FFD700; padding: 15px 30px; color: white; text-decoration: none; font-size: 1.5em; border-radius: 5px;">Message Us on WhatsApp to Order</a>
+    </div>
+  </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Research-Backed Methods</li>
-            <li>Free Guidance</li>
-            <li>Weekly Articles</li>
-            <li>Personal Assistance</li>
-        </ul>
-    </section>
+  <!-- Products Section -->
+  <section id="products" style="background-color: white; padding: 50px;">
+    <h2 style="color: #6B8E23; text-align: center;">Our Featured Products</h2>
+    <div style="display: flex; justify-content: space-around;">
+      <div class="product">
+        <img src="path_to_product1.jpg" alt="Product 1" style="width: 100%;">
+        <h3 style="color: #6B8E23;">Product Name</h3>
+        <p style="color: #333;">Description of the product highlighting its benefits.</p>
+        <a href="https://wa.me/yourwhatsapplink" style="background-color: #FFD700; padding: 10px 20px; color: white; text-decoration: none;">Order via WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="blog">
-        <h2>Latest Articles</h2>
-        <div class="blog-post">
-            <h3>How to Master Your Productivity</h3>
-            <p>Discover tips to enhance your productivity with our tools.</p>
-            <a href="#" class="cta-button">Read More</a>
-        </div>
-        <!-- Add more blog posts as needed -->
-    </section>
+  <!-- Blog Section -->
+  <section id="blog" style="background-color: #f9f9f9; padding: 50px;">
+    <h2 style="color: #6B8E23; text-align: center;">Latest Articles</h2>
+    <article style="margin-bottom: 20px;">
+      <h3 style="color: #6B8E23;">How to Boost Your Productivity</h3>
+      <p style="color: #333;">Learn practical tips on how our tools can help you stay organized and productive.</p>
+      <blockquote style="color: #FFD700;">"Productivity isn’t just about doing more; it’s about doing what matters."</blockquote>
+      <a href="article_link_here" style="color: #6B8E23; text-decoration: none;">Read More</a>
+    </article>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
+  <!-- Benefits Section -->
+  <section id="benefits" style="background-color: white; padding: 50px;">
+    <h2 style="color: #6B8E23; text-align: center;">Why Choose Prioxell?</h2>
+    <div style="display: flex; justify-content: space-around;">
+      <div class="benefit">
+        <h3 style="color: #6B8E23;">Functional Design</h3>
+        <p style="color: #333;">Our products are designed to seamlessly integrate into your daily workflow.</p>
+      </div>
+      <div class="benefit">
+        <h3 style="color: #6B8E23;">Customer Testimonials</h3>
+        <p style="color: #333;">“Prioxell tools have transformed how I organize my day. Highly recommend!”</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Shopping Section -->
+  <section id="shopping" style="background-color: #f9f9f9; padding: 50px;">
+    <h2 style="color: #6B8E23; text-align: center;">Shop Our Products</h2>
+    <div style="display: flex; justify-content: space-around;">
+      <div class="product">
+        <img src="path_to_product_image.jpg" alt="Product Image" style="width: 100%;">
+        <h3 style="color: #6B8E23;">Product Name</h3>
+        <p style="color: #333;">Detailed description of the product.</p>
+        <a href="https://wa.me/yourwhatsapplink" style="background-color: #FFD700; padding: 10px 20px; color: white; text-decoration: none;">Order via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
+    <p>© 2024 Prioxell. All Rights Reserved.</p>
+    <div style="color: #FFD700;">
+      <a href="your_facebook_link" style="color: #FFD700; margin-right: 15px;">Facebook</a>
+      <a href="your_instagram_link" style="color: #FFD700;">Instagram</a>
+    </div>
+  </footer>
+
 </body>
 </html>
