@@ -6,9 +6,11 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(to right, red, yellow); /* Gradient applied to the body */
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark gray for text */
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -19,9 +21,9 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: #6B8E23;
+    color: #6B8E23; /* Olive Green */
 }
 
 .search input {
@@ -33,11 +35,14 @@ body {
     border: 1px solid white;
     padding: 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
+/* Hero Section */
 .hero {
-    background-image: url('your-image-path.jpg'); /* WhatsApp Image 2024-09-15 at 11.59.35 PM.jpeg */
+    background-image: url('1726773968462-012.jpeg'); /* Add the actual image path here */
     background-size: cover;
+    background-position: center;
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -46,7 +51,7 @@ body {
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    color: #6B8E23; /* Olive Green Header */
+    color: #6B8E23; /* Olive Green for header */
 }
 
 .hero p {
@@ -59,4 +64,75 @@ body {
     background-color: #6B8E23;
     color: #FFFFFF;
     border: none;
-    cursor
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.explore-btn:hover {
+    background-color: #556B2F; /* Darkened Olive Green Hover */
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #6B8E23; /* Olive Green for section title */
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #6B8E23;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.book-btn, .view-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.book-btn:hover, .view-btn:hover {
+    background-color: #556B2F; /* Darkened Olive Green Hover */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
