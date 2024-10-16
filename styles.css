@@ -45,18 +45,20 @@ body {
     background-size: cover;
     color: white;
     padding: 100px 20px;
-    text-align: center;
+    text-align: left; /* Change to left-align the text */
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: #6B8E23; /* Olive Green */
+    font-size: 4rem; /* Increased font size */
+    color: #FFFFFF; /* Changed to white */
+    margin-bottom: 20px; /* Add spacing below the heading */
 }
 
 .hero p {
     font-size: 1.5rem;
     margin: 10px 0 20px;
+    color: #FFFFFF; /* Ensure the paragraph text is white */
 }
 
 .explore-btn {
