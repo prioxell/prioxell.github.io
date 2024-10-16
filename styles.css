@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #FFFFFF; /* White background */
-    color: #333333; /* Dark gray for text */
+    background-color: #FFFFFF;
+    color: #333333;
 }
 
 /* Navbar */
@@ -23,7 +23,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: #6B8E23; /* Olive Green */
+    color: #6B8E23;
 }
 
 .search input {
@@ -35,23 +35,22 @@ body {
     border: 1px solid white;
     padding: 10px;
     border-radius: 20px;
-    cursor: pointer;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('1726773968462-012.jpeg'); /* Add the actual image path here */
+    background-image: url('your-image-path.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    color: white;
     padding: 100px 20px;
     text-align: center;
+    color: white;
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    color: #6B8E23; /* Olive Green for header */
+    color: #6B8E23;
 }
 
 .hero p {
@@ -62,15 +61,14 @@ body {
 .explore-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
-    color: #FFFFFF;
+    color: white;
     border: none;
-    cursor: pointer;
     border-radius: 20px;
-    font-size: 1rem;
+    cursor: pointer;
 }
 
 .explore-btn:hover {
-    background-color: #556B2F; /* Darkened Olive Green Hover */
+    background-color: #556B2F;
 }
 
 /* Services Section */
@@ -83,14 +81,13 @@ body {
 .services h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    color: #6B8E23; /* Olive Green for section title */
+    color: #6B8E23;
     margin-bottom: 30px;
 }
 
 .service-cards {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .card {
@@ -100,7 +97,6 @@ body {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .card h3 {
@@ -110,8 +106,8 @@ body {
 }
 
 .card p {
-    margin-bottom: 20px;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .book-btn, .view-btn {
@@ -119,20 +115,94 @@ body {
     background-color: #6B8E23;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 10px;
-    font-size: 1rem;
+    cursor: pointer;
 }
 
 .book-btn:hover, .view-btn:hover {
-    background-color: #556B2F; /* Darkened Olive Green Hover */
+    background-color: #556B2F;
 }
 
-/* Footer */
-footer {
+/* Story Section */
+.story {
+    background-color: #333333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.story h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 20px;
+}
+
+.story p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.learn-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Insights Section */
+.insights {
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.insights h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 30px;
+}
+
+.insight-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.insight {
+    width: 30%;
+    background-color: #f4f4f4;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.insight img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.insight h3 {
+    font-size: 1.5rem;
+    color: #6B8E23;
+    margin: 20px 0 10px;
+}
+
+.insight p {
+    font-size: 1.2rem;
+}
+
+/* Footer Section */
+footer {
     background-color: #333333;
     color: white;
     text-align: center;
+    padding: 20px;
     font-size: 0.9rem;
 }
