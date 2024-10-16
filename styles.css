@@ -41,7 +41,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('aaa1.jpeg'); /* Replace with your image path */
+    background-image: url('veriety.jpeg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the whole area without stretching */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
