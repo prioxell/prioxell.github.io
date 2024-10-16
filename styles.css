@@ -20,13 +20,9 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem; /* Adjust font size as needed */
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: #6B8E23; /* Olive Green or another color you prefer */
-    letter-spacing: 221px; /* Adjusted letter-spacing */
-    text-align: center; /* Center it if needed */
-}
-
+    color: #6B8E23; /* Olive Green */
 }
 
 .search input {
