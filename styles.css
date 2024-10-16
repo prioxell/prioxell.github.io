@@ -13,7 +13,7 @@ body {
 /* Header Styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centers the brand name and logo */
     align-items: center;
     padding: 20px;
     background-color: #000000;
@@ -22,13 +22,19 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.8rem; /* Increased font size for brand name */
+    font-size: 2rem; /* Increased font size for brand name */
     color: #6B8E23; /* Olive Green */
 }
 
 .logo img {
-    width: 40px; /* Adjust size of the logo */
-    margin-right: 10px; /* Space between logo and text */
+    width: 50px; /* Adjust size of the logo */
+    margin-left: 10px; /* Space between brand name and logo */
+}
+
+/* Optional: Adjust search and menu position */
+.search, .menu-btn {
+    position: absolute;
+    right: 20px; /* Moves search and menu to the right */
 }
 
 .search input {
