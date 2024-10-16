@@ -62,10 +62,10 @@ body {
     display: block;
 }
 
-/* Adjust the heading to break the line for "Today" */
+/* Adjust the heading to break the line for "to Success." */
 .hero h1 span {
-    display: block; /* Forces a line break before "Today" */
-    margin-top: 10px; /* Adds some space between "Workflow" and "Today" */
+    display: block; /* Forces a line break before "to Success." */
+    margin-top: 10px; /* Adds some space between "Your Way" and "to Success." */
 }
 
 /* Add smaller text below the main heading */
