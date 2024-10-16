@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 2rem; /* Increased font size for brand name */
-    color: #6B8E23; /* Olive Green */
+    color: #FFFFFF; /* White */
 }
 
 .logo img {
