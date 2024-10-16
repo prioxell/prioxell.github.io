@@ -10,6 +10,7 @@ body {
     color: #FFFFFF;
 }
 
+/* Header Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,7 @@ body {
     cursor: pointer;
 }
 
+/* Hero Section Styles */
 .hero {
     background-image: url('your-image-path.jpg'); /* Replace with your image path */
     background-size: cover;
@@ -64,12 +66,14 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 .explore-btn:hover {
     background-color: #556B2F; /* Darkened Olive Green Hover */
 }
 
+/* Services Section Styles */
 .services {
     padding: 50px 20px;
     background-color: #1E1E1E; /* Darker section background */
@@ -85,17 +89,24 @@ body {
 
 .service-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap; /* Make it responsive */
 }
 
 .card {
     background-color: #f4f4f4;
     color: #000000;
     padding: 20px;
-    width: 30%;
+    margin: 10px; /* Added spacing */
+    width: 280px; /* Fixed width */
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Added hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .card h3 {
@@ -116,12 +127,14 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .book-btn:hover, .view-btn:hover {
     background-color: #556B2F;
 }
 
+/* Story Section Styles */
 .story {
     padding: 50px 20px;
     background-color: #2B2B2B; /* Story section background */
@@ -140,12 +153,14 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .learn-btn:hover {
     background-color: #556B2F;
 }
 
+/* Insights Section Styles */
 .insights {
     padding: 50px 20px;
     background-color: #1E1E1E; /* Insights section background */
@@ -160,14 +175,16 @@ body {
 
 .insight-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap; /* Make it responsive */
 }
 
 .insight {
-    width: 30%;
+    width: 280px; /* Fixed width */
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
+    margin: 10px; /* Added spacing */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
