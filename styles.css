@@ -45,22 +45,36 @@ body {
     background-size: cover;
     color: white;
     padding: 100px 20px;
-    text-align: left; /* Change to left-align the text */
+    text-align: left; /* Aligns text to the left */
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem; /* Increased font size */
-    color: #FFFFFF; /* Changed to white */
-    margin-bottom: 20px; /* Add spacing below the heading */
+    font-size: 4rem; /* Increased font size for main heading */
+    color: #FFFFFF; /* White color */
+    margin-bottom: 20px;
+    margin-left: 40px; /* Adds space from the left */
+    line-height: 1.2; /* Adjusts spacing between lines */
+    display: block; 
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin: 10px 0 20px;
-    color: #FFFFFF; /* Ensure the paragraph text is white */
+/* Force "Today" to be on a new line */
+.hero h1::after {
+    content: "Today"; /* Add "Today" below the main heading */
+    display: block;
+    font-size: 4rem; /* Same font size for consistency */
+    margin-top: 10px; /* Adds some space between "Workflow" and "Today" */
 }
 
+/* Add smaller text below the main heading */
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem; /* Smaller font size */
+    color: #FFFFFF; /* White color */
+    margin-top: 20px; /* Adds some space above this text */
+    margin-left: 40px; /* Align with the heading */
+    font-weight: 300; /* Lighter weight for a sleek look */
+}
 .explore-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
