@@ -1,43 +1,202 @@
-/* Hero Section Styles */
-.hero {
-    background-color: #1E1E1E; /* Replacing image with a dark background color */
-    color: white;
-    height: 90vh; /* Full height to make the hero section take up most of the screen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hero-content {
-    max-width: 800px; /* Limits the width of content inside the hero */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #1E1E1E, #2B2B2B);
+    color: #FFFFFF;
+}
+
+/* Header Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6B8E23; /* Olive Green */
+}
+
+.search input {
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu-btn {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('your-image-path.jpg'); /* Replace with your image path */
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 6rem;
-    color: #FFFFFF; /* White */
-    margin: 0;
-    line-height: 1.1;
+    font-size: 3rem;
+    color: #6B8E23; /* Olive Green */
 }
 
 .hero p {
     font-size: 1.5rem;
-    margin: 20px 0;
+    margin: 10px 0 20px;
 }
 
 .explore-btn {
-    padding: 15px 30px;
-    background-color: transparent; /* Transparent background */
-    border: 2px solid #FFFFFF; /* White border */
+    padding: 10px 20px;
+    background-color: #6B8E23;
     color: #FFFFFF;
+    border: none;
     cursor: pointer;
-    border-radius: 30px;
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 .explore-btn:hover {
-    background-color: #6B8E23; /* Olive green background on hover */
-    color: #FFFFFF;
+    background-color: #556B2F; /* Darkened Olive Green Hover */
+}
+
+/* Services Section Styles */
+.services {
+    padding: 50px 20px;
+    background-color: #1E1E1E; /* Darker section background */
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Make it responsive */
+}
+
+.card {
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 20px;
+    margin: 10px; /* Added spacing */
+    width: 280px; /* Fixed width */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Added hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #6B8E23;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.book-btn, .view-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover, .view-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Story Section Styles */
+.story {
+    padding: 50px 20px;
+    background-color: #2B2B2B; /* Story section background */
+    text-align: center;
+}
+
+.story h2 {
+    font-size: 2rem;
+    color: #6B8E23;
+}
+
+.learn-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.learn-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Insights Section Styles */
+.insights {
+    padding: 50px 20px;
+    background-color: #1E1E1E; /* Insights section background */
+    text-align: center;
+}
+
+.insights h2 {
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 30px;
+}
+
+.insight-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Make it responsive */
+}
+
+.insight {
+    width: 280px; /* Fixed width */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Added spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.insight img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
 }
