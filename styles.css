@@ -40,6 +40,7 @@ body {
 }
 
 /* Hero Section Styles */
+/* Updated Hero Section Styles */
 .hero {
     background-image: url('your-image-path.jpg'); /* Replace with your image path */
     background-size: cover;
@@ -55,14 +56,12 @@ body {
     margin-bottom: 20px;
     margin-left: 40px; /* Adds space from the left */
     line-height: 1.2; /* Adjusts spacing between lines */
-    display: block; 
+    display: block;
 }
 
-/* Force "Today" to be on a new line */
-.hero h1::after {
-    content: "Today"; /* Add "Today" below the main heading */
-    display: block;
-    font-size: 4rem; /* Same font size for consistency */
+/* Adjust the heading to break the line for "Today" */
+.hero h1 span {
+    display: block; /* Forces a line break before "Today" */
     margin-top: 10px; /* Adds some space between "Workflow" and "Today" */
 }
 
@@ -75,6 +74,7 @@ body {
     margin-left: 40px; /* Align with the heading */
     font-weight: 300; /* Lighter weight for a sleek look */
 }
+
 .explore-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
