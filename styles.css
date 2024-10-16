@@ -40,7 +40,6 @@ body {
 }
 
 /* Hero Section Styles */
-/* Updated Hero Section Styles */
 .hero {
     background-image: url('aaa1.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the whole area without stretching */
