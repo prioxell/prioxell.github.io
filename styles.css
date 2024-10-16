@@ -42,8 +42,15 @@ body {
 /* Hero Section Styles */
 /* Updated Hero Section Styles */
 .hero {
-    background-image: url('aaa1.jpeg'); /* Replace with your image path */
-    background-size: cover;
+    .hero {
+    background-image: url('aaa1.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the whole area without stretching */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background stay fixed when scrolling */
+    color: white;
+    padding: 100px 20px;
+    text-align: left;
     color: white;
     padding: 100px 20px;
     text-align: left; /* Aligns text to the left */
