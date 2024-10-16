@@ -20,9 +20,15 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem; /* Increased font size for brand name */
     color: #6B8E23; /* Olive Green */
+}
+
+.logo img {
+    width: 40px; /* Adjust size of the logo */
+    margin-right: 10px; /* Space between logo and text */
 }
 
 .search input {
@@ -48,8 +54,13 @@ body {
     background-attachment: fixed; /* Keeps the image fixed when scrolling */
     color: white;
     padding: 100px 20px;
-    text-align: left;
+    text-align: center; /* Center the text */
     min-height: 100vh; /* Ensures the hero section takes up full viewport height */
+}
+
+.hero-content {
+    max-width: 600px; /* Limits the width for better readability */
+    margin: 0 auto; /* Center the content */
 }
 
 .hero h1 {
@@ -57,24 +68,19 @@ body {
     font-size: 4rem; /* Increased font size for main heading */
     color: #FFFFFF; /* White color */
     margin-bottom: 20px;
-    margin-left: 40px; /* Adds space from the left */
     line-height: 1.2; /* Adjusts spacing between lines */
-    display: block;
 }
 
-/* Adjust the heading to break the line for "to Success." */
 .hero h1 span {
-    display: block; /* Forces a line break before "to Success." */
-    margin-top: 10px; /* Adds some space between "Your Way" and "to Success." */
+    display: block; /* Forces a line break before "Today" */
+    margin-top: 10px; /* Adds some space between the lines */
 }
 
-/* Add smaller text below the main heading */
 .hero h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem; /* Smaller font size */
+    font-size: 1.5rem; /* Smaller font size for the tagline */
     color: #FFFFFF; /* White color */
-    margin-top: 20px; /* Adds some space above this text */
-    margin-left: 40px; /* Align with the heading */
+    margin-top: 20px; /* Adds space above this text */
     font-weight: 300; /* Lighter weight for a sleek look */
 }
 
@@ -85,10 +91,14 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    margin-top: 20px; /* Adds space above the button */
+    display: inline-block; /* Center the button */
 }
 
 .explore-btn:hover {
     background-color: #556B2F; /* Darkened Olive Green Hover */
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
 }
 
 /* Services Section Styles */
@@ -160,61 +170,4 @@ body {
 }
 
 .story h2 {
-    font-size: 2rem;
-    color: #6B8E23;
-}
-
-.learn-btn {
-    padding: 10px 20px;
-    background-color: #6B8E23;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-}
-
-.learn-btn:hover {
-    background-color: #556B2F;
-}
-
-/* Insights Section Styles */
-.insights {
-    padding: 50px 20px;
-    background-color: #1E1E1E; /* Insights section background */
-    text-align: center;
-}
-
-.insights h2 {
-    font-size: 2.5rem;
-    color: #6B8E23;
-    margin-bottom: 30px;
-}
-
-.insight-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Make it responsive */
-}
-
-.insight {
-    width: 280px; /* Fixed width */
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px; /* Added spacing */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.insight img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-footer {
-    padding: 20px;
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    font-size: 0.9rem;
-}
+    font-size:
