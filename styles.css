@@ -10,35 +10,6 @@ body {
     color: #FFFFFF;
 }
 
-/* Header Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000000;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #6B8E23; /* Olive Green */
-}
-
-.search input {
-    padding: 5px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-}
-
-.menu-btn {
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
 /* Hero Section Styles */
 .hero {
     background-image: url('abc.png'); /* Replace with your image path */
@@ -54,21 +25,16 @@ body {
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem; /* Increased font size for main heading */
+    font-weight: bold;
+    font-size: 4rem; /* Adjust as needed */
+    letter-spacing: 10px; /* Adjusted to a more legible spacing */
     color: #FFFFFF; /* White color */
     margin-bottom: 20px;
     margin-left: 40px; /* Adds space from the left */
     line-height: 1.2; /* Adjusts spacing between lines */
-    display: block;
 }
 
-/* Adjust the heading to break the line for "to Success." */
-.hero h1 span {
-    display: block; /* Forces a line break before "to Success." */
-    margin-top: 10px; /* Adds some space between "Your Way" and "to Success." */
-}
-
-/* Add smaller text below the main heading */
+/* Smaller heading below main hero text */
 .hero h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem; /* Smaller font size */
