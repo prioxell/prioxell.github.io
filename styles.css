@@ -21,16 +21,6 @@ body {
     font-weight: bold;
 }
 
-.nav-links {
-    display: flex;
-}
-
-.nav-item {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
 .hero {
     text-align: center;
     padding: 100px 20px;
