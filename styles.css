@@ -11,23 +11,15 @@ body {
 }
 
 /* Header Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-}
-
-.logo {
+.brand-logo {
     font-size: 2rem; /* Adjusted for branding */
     font-family: 'Montserrat', sans-serif;
     color: #6B8E23; /* Olive Green */
     letter-spacing: 0.221em; /* Adjusted letter spacing */
+    position: absolute; /* Keep the logo at the top left */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 10; /* Ensure it stays on top */
 }
 
 /* Hero Section Styles */
