@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,31 +10,40 @@ body {
     color: #FFFFFF;
 }
 
-/* Brand Logo (Top Left) */
-.brand-logo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 10px;
-    color: #6B8E23; /* Olive Green */
+/* Header Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    background-color: transparent;
     position: absolute;
+    width: 100%;
     top: 0;
-    left: 20px;
     z-index: 10;
 }
 
-/* Hero Section */
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6B8E23;
+    letter-spacing: 221px; /* Adjusted for branding */
+}
+
+/* Hero Section Styles */
 .hero {
-    background-image: url('abc.png');
+    background-image: url('abc.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: center;
+    text-align: center; /* Center align */
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero h1 {
@@ -66,14 +74,14 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    margin-top: 20px;
+    margin: 30px auto; /* Center the button */
 }
 
 .explore-btn:hover {
     background-color: #556B2F;
 }
 
-/* Services Section */
+/* Services Section Styles */
 .services {
     padding: 50px 20px;
     background-color: #1E1E1E;
@@ -89,27 +97,64 @@ body {
 
 .service-cards {
     display: flex;
-    justify-content: space-around; /* or center */
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .card {
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* This ensures that the button is positioned well */
-    height: 100%; /* Ensure the cards are equal height */
+    justify-content: space-between;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.card p {
+    height: 60px;
 }
 
-.card h3 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+.book-btn, .view-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover, .view-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Story Section Styles */
+.story {
+    padding: 50px 20px;
+    background-color: #2B2B2B;
+    text-align: center;
+}
+
+.story h2 {
+    font-size: 2rem;
     color: #6B8E23;
+    margin-bottom: 20px;
 }
 
+.story p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    color: #f4f4f4;
+}
+
+/* Learn More Button */
 .learn-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -124,31 +169,62 @@ body {
     background-color: #556B2F;
 }
 
-/* Content Section */
-.content-section {
+/* Insights Section Styles */
+.insights {
     padding: 50px 20px;
+    background-color: #1E1E1E;
     text-align: center;
-    background-color: #2B2B2B;
-    color: white;
 }
 
-.content-section h2 {
-    font-family: 'Montserrat', sans-serif;
+.insights h2 {
     font-size: 2.5rem;
     color: #6B8E23;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.content-section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.insight-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.insight {
+    width: 280px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.insight img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
 footer {
     padding: 20px;
     background-color: #333333;
     color: white;
     text-align: center;
     font-size: 0.9rem;
+}
+
+/* Subpage Content */
+.content-section {
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+.content-section h2 {
+    color: #6B8E23;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    margin-bottom: 20px;
 }
