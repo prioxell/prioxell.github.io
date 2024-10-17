@@ -11,33 +11,38 @@ body {
 }
 
 /* Header Styles */
-.header {
-    display: flex;
-    justify-content: space-between; /* Space between logo and nav links */
-    align-items: center;
-    padding: 20px; /* Add padding for better spacing */
-}
-
 .brand-logo {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     color: #6B8E23;
     letter-spacing: 0.221em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
 }
 
-.nav-links {
+/* Navigation Bar Styles */
+.navbar {
     display: flex;
-    gap: 20px; /* Space between nav items */
+    justify-content: space-around;
+    background-color: #1E1E1E;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-.nav-item {
-    color: white;
+.navbar a {
+    color: #6B8E23;
     text-decoration: none;
-    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
 }
 
-.nav-item:hover {
-    text-decoration: underline; /* Hover effect for navigation links */
+.navbar a:hover {
+    text-decoration: underline;
 }
 
 /* Hero Section Styles */
@@ -132,10 +137,11 @@ body {
 .learn-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
-    color: #FFFFFF;
+    color: white;
     border: none;
-    border-radius: 20px;
     cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .learn-btn:hover {
@@ -144,7 +150,7 @@ body {
 
 /* Story Section Styles */
 .story {
-    padding: 40px 20px;
+    padding: 50px 20px;
     background-color: #2B2B2B;
     text-align: center;
 }
@@ -152,116 +158,137 @@ body {
 .story h2 {
     font-size: 2rem;
     color: #6B8E23;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .story p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 600px;
-    margin: 0 auto 20px;
-    line-height: 1.4;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
     color: #f4f4f4;
 }
 
 /* Insights Section Styles */
 .insights {
-    padding: 40px 20px;
+    padding: 50px 20px;
+    background-color: #1E1E1E;
     text-align: center;
 }
 
 .insights h2 {
-    font-size: 2rem;
-    color: #6B8E23;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
 .insight-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .insight {
-    background: #f4f4f4;
-    color: #000;
+    width: 30%;
+    background-color: #2B2B2B;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     margin: 10px;
-    width: 250px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: left;
 }
 
 .insight img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .insight h3 {
-    font-size: 1.6rem; /* Increased size */
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .insight p {
-    font-size: 1.2rem; /* Increased size */
+    font-size: 1rem;
+    color: #CCCCCC;
+    margin-bottom: 15px;
 }
 
 .insight .author {
-    font-size: 1rem; /* Increased size */
-}
-
-/* Footer Styles */
-footer {
-    background-color: #1E1E1E;
-    text-align: center;
-    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #AAAAAA;
+    margin-bottom: 5px;
 }
 
 /* Popup Styles */
 .popup {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+    z-index: 20;
 }
 
 .popup-content {
-    background-color: #fefefe;
-    margin: 20px;
+    background-color: #fff;
     padding: 20px;
-    border: 1px solid #888;
     border-radius: 10px;
+    max-width: 600px;
     text-align: center;
 }
 
-/* Responsive Adjustments */
+.close-btn {
+    background-color: #6B8E23;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .service-cards {
-        flex-direction: column; /* Stack service cards on smaller screens */
+        flex-direction: column;
         align-items: center;
     }
 
     .card {
-        width: 90%; /* Full width for cards on smaller screens */
-        max-width: 400px; /* Max width for readability */
+        width: 90%; /* Make cards wider on small screens */
     }
 
-    .insight-grid {
-        flex-direction: column; /* Stack insights on smaller screens */
-        align-items: center; /* Center items */
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin-bottom: 10px; /* Space out links on mobile */
     }
 
     .insight {
-        width: 90%; /* Full width on smaller screens */
-        max-width: 300px; /* Max width to keep cards readable */
+        width: 100%; /* Full width for insights on mobile */
+    }
+
+    .insight-grid {
+        flex-direction: column;
     }
 }
