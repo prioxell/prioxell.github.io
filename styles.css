@@ -264,3 +264,31 @@ footer {
     background-color: #1E1E1E;
     color: #FFFFFF;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Make cards wider on small screens */
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin-bottom: 10px; /* Space out links on mobile */
+    }
+
+    .insight {
+        width: 100%; /* Full width for insights on mobile */
+    }
+
+    .insight-grid {
+        flex-direction: column;
+    }
+}
