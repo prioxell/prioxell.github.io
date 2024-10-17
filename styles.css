@@ -3,7 +3,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background for contrast */
+    background-image: url('path/to/your/background-image.jpg'); /* Set your background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-position: center; /* Center the background image */
     color: #333; /* Default text color */
 }
 
@@ -24,7 +27,7 @@ body {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #6B8E23; /* Olive green background */
+    background-color: rgba(107, 142, 35, 0.8); /* Olive green background with transparency */
     color: white;
 }
 
@@ -68,7 +71,6 @@ body {
     border-radius: 10px;
     margin: 10px;
     width: calc(30% - 20px); /* Adjust width for insights */
-    min-width: 300px; /* Ensure minimum width for smaller screens */
 }
 
 .insight img {
