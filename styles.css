@@ -3,11 +3,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Default text color */
     background-image: url('path/to/your/background-image.jpg'); /* Set your background image */
     background-size: cover; /* Cover the entire background */
     background-repeat: no-repeat; /* Prevent background from repeating */
     background-position: center; /* Center the background image */
-    color: #333; /* Default text color */
 }
 
 .header {
@@ -22,6 +23,21 @@ body {
 .brand-logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.nav li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+.nav a {
+    color: white; /* White text for nav links */
+    text-decoration: none; /* Remove underline */
 }
 
 .hero {
