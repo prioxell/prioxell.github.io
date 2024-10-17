@@ -202,21 +202,15 @@ body {
 }
 
 .insight h3 {
-    font-size: 1.2rem;
-    color: #6B8E23;
-    margin-bottom: 5px;
+    font-size: 1.6rem; /* Increased size */
 }
 
 .insight p {
-    font-size: 0.9rem;
-    color: #666666;
-    margin-bottom: 10px;
+    font-size: 1.2rem; /* Increased size */
 }
 
 .insight .author {
-    font-size: 0.8rem;
-    color: #AAAAAA;
-    margin-bottom: 5px;
+    font-size: 1rem; /* Increased size */
 }
 
 /* Footer Styles */
