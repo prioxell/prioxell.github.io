@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- Header Section with Navigation Links -->
+    <!-- Header Section -->
     <div class="header">
         <div class="brand-logo">Prioxell</div>
         <div class="nav-links">
@@ -25,7 +25,7 @@
             Simplify and Organize Your Path <span>to Excellence</span>
         </h1>
         <h2>"Find Clarity in Simplicity"</h2>
-        <button class="explore-btn">Explore</button>
+        <button class="explore-btn" onclick="toggleOverlay()">Explore</button>
     </section>
 
     <!-- Services Section -->
@@ -51,7 +51,7 @@
     <section class="story" id="about">
         <h2>Discover Our Story</h2>
         <p>At Prioxell, we are passionate about helping individuals and teams achieve their highest potential through powerful productivity tools and strategies. Our journey is rooted in the belief that clarity drives success, and we strive to simplify the path to excellence for everyone. From our expert-driven products to our dedicated community, we aim to inspire progress and enable greatness.</p>
-        <button class="learn-btn">Learn More</button>
+        <button class="learn-btn" onclick="location.href='discover.html'">Learn More</button>
     </section>
 
     <!-- Insights Section -->
@@ -85,6 +85,27 @@
     <footer>
         <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
     </footer>
+
+    <!-- Explore Options Overlay -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="toggleOverlay()">&times;</span>
+            <h2>Select an Option</h2>
+            <ul>
+                <li><a href="our-product.html">Our Product</a></li>
+                <li><a href="prioxells-formula.html">Prioxell's Formula</a></li>
+                <li><a href="how-to-use-todo-list.html">How to Use a To-Do List Effectively</a></li>
+                <li><a href="discover.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleOverlay() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = overlay.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 
 </body>
 </html>
