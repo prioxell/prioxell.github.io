@@ -33,7 +33,7 @@ body {
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: left;
+    text-align: center; /* Center align the content */
     min-height: 100vh;
 }
 
@@ -42,9 +42,7 @@ body {
     font-size: 4rem;
     color: #FFFFFF;
     margin-bottom: 20px;
-    margin-left: 40px;
     line-height: 1.2;
-    display: block;
 }
 
 .hero h1 span {
@@ -57,10 +55,10 @@ body {
     font-size: 1.8rem;
     color: #FFFFFF;
     margin-top: 20px;
-    margin-left: 40px;
     font-weight: 300;
 }
 
+/* Center the explore button */
 .explore-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -68,6 +66,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .explore-btn:hover {
@@ -116,11 +115,7 @@ body {
     color: #6B8E23;
 }
 
-.card p {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-}
-
+/* Buttons */
 .book-btn, .view-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
