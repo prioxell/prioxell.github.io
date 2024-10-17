@@ -10,38 +10,55 @@ body {
     color: #FFFFFF;
 }
 
+/* Brand Logo (Top Left) */
+.brand-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 10px; /* Adjusted letter spacing */
+    color: #6B8E23; /* Olive Green */
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 10;
+}
+
 /* Hero Section Styles */
 .hero {
     background-image: url('abc.png'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the whole area without stretching */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     padding: 100px 20px;
     text-align: left;
-    min-height: 100vh; /* Ensures the hero section takes up full viewport height */
+    min-height: 100vh;
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 4rem; /* Adjust as needed */
-    letter-spacing: 10px; /* Adjusted to a more legible spacing */
-    color: #FFFFFF; /* White color */
+    font-size: 4rem;
+    color: #FFFFFF;
     margin-bottom: 20px;
-    margin-left: 40px; /* Adds space from the left */
-    line-height: 1.2; /* Adjusts spacing between lines */
+    margin-left: 40px;
+    line-height: 1.2;
+    display: block;
 }
 
-/* Smaller heading below main hero text */
+.hero h1 span {
+    display: block;
+    margin-top: 10px;
+}
+
 .hero h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem; /* Smaller font size */
-    color: #FFFFFF; /* White color */
-    margin-top: 20px; /* Adds some space above this text */
-    margin-left: 40px; /* Align with the heading */
-    font-weight: 300; /* Lighter weight for a sleek look */
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: 300;
 }
 
 .explore-btn {
@@ -54,13 +71,13 @@ body {
 }
 
 .explore-btn:hover {
-    background-color: #556B2F; /* Darkened Olive Green Hover */
+    background-color: #556B2F;
 }
 
 /* Services Section Styles */
 .services {
     padding: 50px 20px;
-    background-color: #1E1E1E; /* Darker section background */
+    background-color: #1E1E1E;
     text-align: center;
 }
 
@@ -74,23 +91,23 @@ body {
 .service-cards {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Make it responsive */
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: #f4f4f4;
     color: #000000;
     padding: 20px;
-    margin: 10px; /* Added spacing */
-    width: 280px; /* Fixed width */
+    margin: 10px;
+    width: 280px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Added hover effect */
+    transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 .card h3 {
@@ -121,7 +138,7 @@ body {
 /* Story Section Styles */
 .story {
     padding: 50px 20px;
-    background-color: #2B2B2B; /* Story section background */
+    background-color: #2B2B2B;
     text-align: center;
 }
 
@@ -147,7 +164,7 @@ body {
 /* Insights Section Styles */
 .insights {
     padding: 50px 20px;
-    background-color: #1E1E1E; /* Insights section background */
+    background-color: #1E1E1E;
     text-align: center;
 }
 
@@ -160,15 +177,15 @@ body {
 .insight-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Make it responsive */
+    flex-wrap: wrap;
 }
 
 .insight {
-    width: 280px; /* Fixed width */
+    width: 280px;
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
-    margin: 10px; /* Added spacing */
+    margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
