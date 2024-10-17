@@ -12,26 +12,26 @@ body {
 
 /* Header Styles */
 .brand-logo {
-    font-size: 2rem; /* Adjusted for branding */
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    color: #6B8E23; /* Olive Green */
-    letter-spacing: 0.221em; /* Adjusted letter spacing */
-    position: absolute; /* Keep the logo at the top left */
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    z-index: 10; /* Ensure it stays on top */
+    color: #6B8E23;
+    letter-spacing: 0.221em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
 }
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('abc.png'); /* Replace with your image path */
+    background-image: url('abc.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: center; /* Center align */
+    text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    margin: 30px auto; /* Center the button */
+    margin: 30px auto;
 }
 
 .explore-btn:hover {
@@ -108,10 +108,9 @@ body {
 }
 
 .card p {
-    height: 60px; /* Ensure consistent height */
+    height: 60px;
 }
 
-/* Learn More Button */
 .learn-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -156,53 +155,50 @@ body {
 
 .insights h2 {
     font-size: 2.5rem;
-    color: #6B8E23;
+    color: #FFFFFF;
     margin-bottom: 30px;
 }
 
 .insight-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .insight {
-    width: 280px;
-    background-color: #f4f4f4;
+    width: 30%;
+    background-color: #2B2B2B;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .insight img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.insight h3 {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.insight p {
+    font-size: 1rem;
+    color: #CCCCCC;
+    margin-bottom: 15px;
+}
+
+.insight .author {
+    font-size: 0.9rem;
+    color: #AAAAAA;
+    margin-bottom: 5px;
 }
 
 /* Footer Styles */
 footer {
-    padding: 20px;
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-/* Subpage Content */
-.content-section {
-    padding: 50px 20px;
-    text-align: left;
-    background-color: #fff;
-    color: #000;
-    line-height: 1.6;
-}
-
-.content-section h2 {
-    color: #6B8E23;
-    margin-bottom: 20px;
-}
-
-.content-section p {
-    margin-bottom: 20px;
-}
+    padding
