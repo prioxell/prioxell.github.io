@@ -201,4 +201,11 @@ body {
 
 /* Footer Styles */
 footer {
-    padding
+    padding: 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+footer p {
+    color: #CCCCCC;
+}
