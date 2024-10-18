@@ -33,7 +33,7 @@ body {
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: center; /* Center align the content */
+    text-align: center;
     min-height: 100vh;
 }
 
@@ -87,10 +87,9 @@ body {
     margin-bottom: 30px;
 }
 
-/* Updated layout using grid for better alignment */
 .service-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     justify-items: center;
 }
@@ -115,7 +114,7 @@ body {
     color: #6B8E23;
 }
 
-/* Updated button to "Learn More" */
+/* Button styling */
 .learn-more-btn, .learn-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -124,9 +123,9 @@ body {
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s;
-    text-decoration: none; /* Remove underline from links */
-    display: inline-block; /* Make it a block element */
-    margin-top: 20px; /* Add some space above the button */
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .learn-more-btn:hover, .learn-btn:hover {
@@ -143,7 +142,14 @@ body {
 .story h2 {
     font-size: 2rem;
     color: #6B8E23;
-    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.story p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ffffff;
 }
 
 /* Insights Section Styles */
@@ -160,25 +166,42 @@ body {
 }
 
 .insight-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-sized columns */
+    gap: 30px; /* Increased gap for spacing */
 }
 
 .insight {
-    width: 280px;
     background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px; /* Increase padding for more space inside */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.insight:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .insight img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
+.insight h3 {
+    font-size: 1.8rem;
+    color: #6B8E23;
+    margin-bottom: 15px;
+}
+
+.insight p {
+    font-size: 1rem;
+    color: #000;
+}
+
+/* Footer Section */
 footer {
     padding: 20px;
     background-color: #333333;
