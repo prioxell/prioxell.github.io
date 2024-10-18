@@ -126,6 +126,7 @@ body {
     transition: background-color 0.3s;
     text-decoration: none; /* Remove underline from links */
     display: inline-block; /* Make it a block element */
+    margin-top: 20px; /* Add some space above the button */
 }
 
 .learn-more-btn:hover, .learn-btn:hover {
@@ -144,6 +145,47 @@ body {
     color: #6B8E23;
 }
 
+.story-learn {
+    margin-top: 20px; /* Adjust spacing for the learn more button */
+}
+
 /* Insights Section Styles */
 .insights {
-    padding: 50px
+    padding: 50px 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+.insights h2 {
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 30px;
+}
+
+.insight-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.insight {
+    width: 280px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.insight img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
