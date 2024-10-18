@@ -21,7 +21,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80px; /* Set height to accommodate navbar items */
     position: fixed; /* Keep navbar fixed at the top */
     top: 0;
     left: 0;
@@ -61,10 +60,13 @@ body {
 .hero {
     background-color: transparent; /* Transparent as background is now in navbar */
     color: white;
-    padding: 100px 20px; /* Adjust top padding to create space below navbar */
+    padding: 100px 20px; /* Adjust padding for spacing */
     text-align: left;
     min-height: calc(100vh - 80px); /* Adjusted to occupy remaining space */
     margin-top: 80px; /* Add top margin equal to navbar height */
+    display: flex; /* Use flexbox for hero content */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
 }
 
 .hero-content h1 {
