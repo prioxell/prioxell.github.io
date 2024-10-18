@@ -47,9 +47,20 @@
     <!-- Story Section -->
     <section class="story">
         <h2>Discover Our Story</h2>
-        <p>Welcome to Prioxell, where we provide premium productivity tools and services to optimize your workflow and drive success. Our blog is a hub of insights and strategies, creating a community dedicated to progress and excellence.</p>
-        <button class="learn-btn">Learn More</button>
+        <div class="story-content">
+            <p>At Prioxell, we’re dedicated to helping you achieve your goals through innovative productivity tools and services. Our philosophy emphasizes simplifying systems to unlock your highest potential. With our research-backed methods, we tackle the challenges of to-do lists, empowering you to overcome procrastination and enhance focus.</p>
+        </div>
+        <a href="#" class="learn-btn" onclick="openModal()">Learn More</a>
     </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Our Story</h2>
+            <p>At Prioxell, we’re dedicated to helping individuals achieve their goals by enhancing productivity through innovative tools and services. We believe that achieving greatness is about simplifying systems rather than complicating them, allowing everyone to reach their highest potential. With our unique research-backed method on the horizon, we aim to address the common challenges associated with to-do lists, ensuring that our tools empower you to overcome procrastination and enhance focus.</p>
+        </div>
+    </div>
 
     <!-- Insights Section -->
     <section class="insights">
@@ -78,5 +89,23 @@
         <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript -->
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        // Close modal when clicking outside of the modal content
+        window.onclick = function(event) {
+            const modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
 </body>
 </html>
