@@ -1,88 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prioxell</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Logo Section (Brand Name) -->
-    <div class="brand-logo">
-        Prioxell
-    </div>
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #1E1E1E, #2B2B2B);
+    color: #FFFFFF;
+}
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero">
-            <h1>
-                Simplify and Organize Your Path <span>to Excellence</span>
-            </h1>
-            <h2>"Find Clarity in Simplicity"</h2>
-        </div>
-        <button class="explore-btn">Explore</button>
-    </section>
+/* Header Styles */
+.brand-logo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6B8E23;
+    letter-spacing: 0.221em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
 
-    <!-- Services Section -->
-    <section class="services">
-        <h2>Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Our Product</h3>
-                <button class="learn-btn" onclick="location.href='our-product.html'">Learn More</button>
-            </div>
-            <div class="card">
-                <h3>Prioxell's Formula</h3>
-                <button class="learn-btn" onclick="location.href='prioxells-formula.html'">Learn More</button>
-            </div>
-            <div class="card">
-                <h3>How to Use a To-Do List Effectively</h3>
-                <button class="learn-btn" onclick="location.href='how-to-use-todo-list.html'">Learn More</button>
-            </div>
-        </div>
-    </section>
+/* Hero Section Styles */
+.hero {
+    background-image: url('abc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    <!-- Story Section -->
-    <section class="story">
-        <h2>Discover Our Story</h2>
-        <p>At Prioxell, we are passionate about helping individuals and teams achieve their highest potential through powerful productivity tools and strategies. Our journey is rooted in the belief that clarity drives success, and we strive to simplify the path to excellence for everyone. From our expert-driven products to our dedicated community, we aim to inspire progress and enable greatness.</p>
-        <button class="learn-btn">Learn More</button>
-    </section>
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
 
-    <!-- Insights Section -->
-    <section class="insights">
-        <h2>Insights</h2>
-        <div class="insight-grid">
-            <!-- Insight 1 -->
-            <div class="insight">
-                <img src="1.jpg" alt="Insight 1 Image">
-                <p class="author">Muhammed Irfadh</p>
-                <h3>Achieve Your Potential: Secrets to...</h3>
-                <p>In the fast-paced world of business and productivity, achieving your full potential is key to success. Whether you're an individual...</p>
-            </div>
-            <!-- Insight 2 -->
-            <div class="insight">
-                <img src="2.jpg" alt="Insight 2 Image">
-                <p class="author">Muhammed Irfadh</p>
-                <h3>Premium Solutions for Success:...</h3>
-                <p>In the fast-paced world we live in today, maximizing productivity and achieving success are top priorities for individuals and businesses...</p>
-            </div>
-            <!-- Insight 3 -->
-            <div class="insight">
-                <img src="3.jpg" alt="Insight 3 Image">
-                <p class="author">Muhammed Irfadh</p>
-                <h3>Maximize Productivity: Strategies an...</h3>
-                <p>When it comes to achieving maximum productivity in both individual and business settings, having the right strategies and tools at your...</p>
-            </div>
-        </div>
-    </section>
+.hero h1 span {
+    display: block;
+    margin-top: 10px;
+}
 
-    <footer>
-        <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
-    </footer>
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-weight: 300;
+}
 
-</body>
-</html>
+.explore-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 30px auto;
+}
 
+.explore-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 50px 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card p {
+    height: 60px;
+}
+
+.learn-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.learn-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Story Section Styles */
+.story {
+    padding: 50px 20px;
+    background-color: #2B2B2B;
+    text-align: center;
+}
+
+.story h2 {
+    font-size: 2rem;
+    color: #6B8E23;
+    margin-bottom: 20px;
+}
+
+.story p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    color: #f4f4f4;
+}
+
+/* Insights Section Styles */
+.insights {
+    padding: 50px 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+.insights h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.insight-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.insight {
+    width: 30%;
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.insight img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.insight h3 {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.insight p {
+    font-size: 1rem;
+    color: #CCCCCC;
+    margin-bottom: 15px;
+}
+
+.insight .author {
+    font-size: 0.9rem;
+    color: #AAAAAA;
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+footer p {
+    color: #CCCCCC;
+}
