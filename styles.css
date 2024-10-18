@@ -15,8 +15,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #1E1E1E; /* Adjust as needed */
+    padding: 20px 40px;
+    background-color: transparent; /* Transparent background */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps it above other elements */
 }
 
 .brand-logo {
@@ -31,15 +35,18 @@ body {
 }
 
 .nav-item {
-    margin-left: 20px;
-    color: white; /* Change to white */
+    margin-left: 30px;
+    color: white; 
     text-decoration: none;
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-item:hover {
-    text-decoration: underline; /* Optional: add hover effect */
+    color: #6B8E23; /* Hover effect with brand color */
+    text-decoration: none;
 }
+
 
 /* Hero Section Styles */
 .hero {
