@@ -143,10 +143,7 @@ body {
 .story h2 {
     font-size: 2rem;
     color: #6B8E23;
-}
-
-.story-learn {
-    margin-top: 20px; /* Adjust spacing for the learn more button */
+    margin-bottom: 20px; /* Add some space below the heading */
 }
 
 /* Insights Section Styles */
