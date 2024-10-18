@@ -31,15 +31,15 @@
         <div class="service-cards">
             <div class="card">
                 <h3>Success Coaching</h3>
-                <button class="learn-more-btn">Learn More</button>
+                <a href="story.html" class="learn-more-btn">Learn More</a>
             </div>
             <div class="card">
                 <h3>Productivity Optimization</h3>
-                <button class="learn-more-btn">Learn More</button>
+                <a href="story.html" class="learn-more-btn">Learn More</a>
             </div>
             <div class="card">
                 <h3>Focus Enhancement</h3>
-                <button class="learn-more-btn">Learn More</button>
+                <a href="story.html" class="learn-more-btn">Learn More</a>
             </div>
         </div>
     </section>
@@ -47,20 +47,9 @@
     <!-- Story Section -->
     <section class="story">
         <h2>Discover Our Story</h2>
-        <div class="story-content">
-            <p>At Prioxell, we’re dedicated to helping you achieve your goals through innovative productivity tools and services. Our philosophy emphasizes simplifying systems to unlock your highest potential. With our research-backed methods, we tackle the challenges of to-do lists, empowering you to overcome procrastination and enhance focus.</p>
-        </div>
-        <a href="#" class="learn-btn" onclick="openModal()">Learn More</a>
+        <p>Prioxell is a brand dedicated to helping individuals achieve their goals by enhancing productivity through innovative tools and services. We believe that achieving greatness is about simplifying systems rather than complicating them, allowing everyone to reach their highest potential. With our unique research-backed method on the horizon, we aim to address the common challenges associated with to-do lists, ensuring that our tools empower you to overcome procrastination and enhance focus.</p>
+        <a href="story.html" class="learn-btn">Learn More</a>
     </section>
-
-    <!-- Modal Structure -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Our Story</h2>
-            <p>At Prioxell, we’re dedicated to helping individuals achieve their goals by enhancing productivity through innovative tools and services. We believe that achieving greatness is about simplifying systems rather than complicating them, allowing everyone to reach their highest potential. With our unique research-backed method on the horizon, we aim to address the common challenges associated with to-do lists, ensuring that our tools empower you to overcome procrastination and enhance focus.</p>
-        </div>
-    </div>
 
     <!-- Insights Section -->
     <section class="insights">
@@ -89,23 +78,5 @@
         <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-
-        // Close modal when clicking outside of the modal content
-        window.onclick = function(event) {
-            const modal = document.getElementById("myModal");
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-    </script>
 </body>
 </html>
