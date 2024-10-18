@@ -10,19 +10,24 @@ body {
     color: #FFFFFF;
 }
 
-/* Invisible Navigation Links */
+/* Navbar with Background Image */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: transparent; /* Make the header background transparent */
+    background-image: url('abc.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* Occupy 60% of viewport height */
+    position: relative;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    color: #6B8E23; /* Olive Green */
+    color: #FFFFFF; /* White for contrast with background */
 }
 
 .nav-links {
@@ -31,7 +36,7 @@ body {
 }
 
 .nav-links a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -43,28 +48,23 @@ body {
 }
 
 .menu-btn {
-    display: none; /* Hide the menu button for now */
+    display: none; /* Hide menu button for now */
 }
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('abc.png'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: transparent; /* Transparent as background is now in navbar */
     color: white;
     padding: 100px 20px;
     text-align: left;
-    min-height: 100vh;
+    min-height: 40vh; /* Adjusted to occupy remaining space */
 }
 
 .hero-content h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem; /* Adjust size for better visibility */
     color: #FFFFFF;
     margin-bottom: 20px;
-    margin-left: 40px;
     line-height: 1.2;
 }
 
@@ -78,7 +78,6 @@ body {
     font-size: 1.8rem;
     color: #FFFFFF;
     margin-top: 20px;
-    margin-left: 40px;
     font-weight: 300;
 }
 
@@ -196,29 +195,4 @@ body {
 }
 
 .insight-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.insight {
-    width: 280px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.insight img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-footer {
-    padding: 20px;
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    font-size: 0.9rem;
-}
+    display
