@@ -21,7 +21,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh; /* Occupy 60% of the viewport height */
+    height: 100vh; /* Occupy 100% of the viewport height */
     position: relative;
     z-index: 1;
 }
