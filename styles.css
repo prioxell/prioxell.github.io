@@ -6,56 +6,76 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #1E1E1E; /* Set a dark background color */
+    background-color: #1E1E1E; /* Dark background for sleek design */
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    position: relative; /* Changed from absolute to prevent stacking issues */
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    z-index: 100; /* Keeps it above other elements */
+    z-index: 100;
 }
-This will ensure that the body
 
 /* Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: transparent; /* Set this to transparent */
-    position: fixed; /* Keeps header fixed at the top */
+    padding: 20px 50px; /* Adds spacing for a cleaner look */
+    background-color: transparent;
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
+    transition: background-color 0.3s ease-in-out; /* For smooth transition when scrolling */
 }
 
-/* Adjusting Brand Name */
+/* Brand Logo - Adjusted for more prominence */
 .brand-logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: #6B8E23;
-    letter-spacing: 0.221em;
+    color: #6B8E23; /* Olive green */
+    letter-spacing: 0.1em;
 }
 
-/* Navigation Links */
+/* Navigation Styles */
 .nav-links {
     display: flex;
+    gap: 40px; /* Spacing between links */
 }
 
 .nav-item {
-    margin-left: 30px;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
     transition: color 0.3s ease-in-out;
+    position: relative;
 }
 
-/* Navigation Item Hover Effect */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #6B8E23;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
 .nav-item:hover {
-    color: #6B8E23; /* Hover effect with brand color */
+    color: #6B8E23; /* Olive hover color */
 }
 
+/* Background Change on Scroll */
+.header.scrolled {
+    background-color: #1E1E1E; /* Darkens the header on scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 /* Hero Section Styles */
 .hero {
@@ -65,7 +85,7 @@ This will ensure that the body
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
-    padding: 100px 20px;
+    padding: 150px 20px; /* Adjusted padding for fixed header */
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -78,12 +98,6 @@ This will ensure that the body
     font-size: 4rem;
     color: #FFFFFF;
     margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.hero h1 span {
-    display: block;
-    margin-top: 10px;
 }
 
 .hero h2 {
@@ -91,7 +105,6 @@ This will ensure that the body
     font-size: 1.8rem;
     color: #FFFFFF;
     margin-top: 20px;
-    font-weight: 300;
 }
 
 .explore-btn {
@@ -102,13 +115,14 @@ This will ensure that the body
     cursor: pointer;
     border-radius: 20px;
     margin: 30px auto;
+    transition: background-color 0.3s;
 }
 
 .explore-btn:hover {
     background-color: #556B2F;
 }
 
-/* Services Section Styles */
+/* Services Section */
 .services {
     padding: 50px 20px;
     background-color: #1E1E1E;
@@ -137,9 +151,6 @@ This will ensure that the body
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .learn-btn {
@@ -156,98 +167,7 @@ This will ensure that the body
     background-color: #556B2F;
 }
 
-/* Story Section Styles */
-.story {
-    padding: 50px 20px;
-    background-color: #2B2B2B;
-    text-align: center;
-}
-
-.story h2 {
-    font-size: 2rem;
-    color: #6B8E23;
-    margin-bottom: 20px;
-}
-
-.story p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-    line-height: 1.6;
-    color: #f4f4f4;
-}
-
-/* Insights Section Styles */
-.insights {
-    padding: 50px 20px;
-    background-color: #1E1E1E;
-    text-align: center;
-}
-
-.insights h2 {
-    font-size: 2.5rem;
-    color: #FFFFFF;
-    margin-bottom: 30px;
-}
-
-.insightHere's the continuation of your CSS, picking up from the **Insights Section Styles** and ensuring everything is correct and integrated:
-
-```css
-/* Insights Section Styles */
-.insights {
-    padding: 50px 20px;
-    background-color: #1E1E1E;
-    text-align: center;
-}
-
-.insights h2 {
-    font-size: 2.5rem;
-    color: #FFFFFF;
-    margin-bottom: 30px;
-}
-
-.insight-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.insight {
-    width: 30%;
-    background-color: #2B2B2B;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.insight img {
-    width: 100%;
-    border-radius: 10px;
-    height: auto; /* Maintain aspect ratio */
-}
-
-.insight h3 {
-    font-size: 1.5rem; /* Increased font size */
-    color: #6B8E23;
-    margin: 10px 0;
-}
-
-.author {
-    font-size: 0.9rem;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-}
-
-/* Media Queries */
+/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
