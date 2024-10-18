@@ -4,17 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%; /* Ensures the body takes full height of the viewport */
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: transparent;
-    position: absolute; /* Ensure it stays on top of the hero section */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100; /* Keeps it above other elements */
-
     color: #FFFFFF;
 }
 
@@ -24,11 +19,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Transparent effect */
-    position: relative; /* This ensures it scrolls with the page */
-    margin: 0;
+    background-color: rgba(0, 0, 0, 0); /* Full transparency */
+    position: relative; /* Ensures non-sticky header */
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for visibility */
 }
 
 .brand-logo {
@@ -54,7 +49,6 @@ body {
     color: #6B8E23; /* Hover effect with brand color */
     text-decoration: none;
 }
-
 
 /* Hero Section Styles */
 .hero {
@@ -141,10 +135,6 @@ body {
     justify-content: space-between;
 }
 
-.card p {
-    height: 60px;
-}
-
 .learn-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -193,6 +183,22 @@ body {
     margin-bottom: 30px;
 }
 
+.insightHere's the continuation of your CSS, picking up from the **Insights Section Styles** and ensuring everything is correct and integrated:
+
+```css
+/* Insights Section Styles */
+.insights {
+    padding: 50px 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+.insights h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
 .insight-grid {
     display: flex;
     justify-content: space-around;
@@ -200,7 +206,7 @@ body {
 }
 
 .insight {
-    width: 30%; /* Increased from previous size */
+    width: 30%;
     background-color: #2B2B2B;
     border-radius: 10px;
     padding: 20px;
@@ -232,4 +238,29 @@ footer {
     padding: 20px;
     background-color: #1E1E1E;
     color: #FFFFFF;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .explore-btn {
+        padding: 8px 16px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insight {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
