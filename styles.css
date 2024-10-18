@@ -24,8 +24,8 @@ This will ensure that the body
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Keep this for a transparent dark effect */
-    position: relative;
+    background-color: transparent; /* Changed to transparent */
+    position: fixed; /* Changed to fixed for better visibility */
     width: 100%;
     z-index: 1000;
 }
@@ -53,6 +53,7 @@ This will ensure that the body
     color: #6B8E23; /* Hover effect with brand color */
     text-decoration: none;
 }
+
 
 /* Hero Section Styles */
 .hero {
