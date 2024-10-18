@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,32 +9,63 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(to bottom, #1E1E1E, #2B2B2B);
     color: #FFFFFF;
+    margin: 0;
 }
 
-/* Brand Logo (Top Left) */
+/* Transparent Navigation Bar */
+.navbar {
+    position: fixed; /* Stays at the top */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Spacing between brand and menu */
+    align-items: center;
+    z-index: 1000; /* Makes sure it stays on top of everything */
+    transition: background-color 0.3s ease-in-out;
+}
+
 .brand-logo {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    letter-spacing: 10px; /* Adjusted letter spacing */
-    color: #6B8E23; /* Olive Green */
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    z-index: 10;
+    letter-spacing: 10px; /* Spaced letters */
+    color: #6B8E23; /* Olive Green color for the logo */
+    margin-left: 20px;
 }
 
-/* Hero Section Styles */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #6B8E23; /* Olive Green color on hover */
+}
+
+/* Hero Section */
 .hero {
-    background-image: url('abc.png'); /* Replace with your image path */
+    background-image: url('abc.png'); /* Replace with your actual image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: center; /* Center align the content */
+    text-align: center;
     min-height: 100vh;
 }
 
@@ -58,14 +90,14 @@ body {
     font-weight: 300;
 }
 
-/* Center the explore button */
+/* Explore Button */
 .explore-btn {
-    padding: 10px 20px;
     background-color: #6B8E23;
-    color: #FFFFFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
-    border-radius: 20px;
     margin-top: 20px;
 }
 
@@ -73,7 +105,12 @@ body {
     background-color: #556B2F;
 }
 
-/* Services Section Styles */
+/* Body Margin to avoid navbar overlap */
+body {
+    margin-top: 80px; /* Adjust this to the height of your navbar */
+}
+
+/* Services Section */
 .services {
     padding: 50px 20px;
     background-color: #1E1E1E;
@@ -115,22 +152,7 @@ body {
     color: #6B8E23;
 }
 
-/* Buttons */
-.book-btn, .view-btn {
-    padding: 10px 20px;
-    background-color: #6B8E23;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-}
-
-.book-btn:hover, .view-btn:hover {
-    background-color: #556B2F;
-}
-
-/* Story Section Styles */
+/* Story Section */
 .story {
     padding: 50px 20px;
     background-color: #2B2B2B;
@@ -156,7 +178,7 @@ body {
     background-color: #556B2F;
 }
 
-/* Insights Section Styles */
+/* Insights Section */
 .insights {
     padding: 50px 20px;
     background-color: #1E1E1E;
@@ -189,6 +211,7 @@ body {
     border-radius: 10px;
 }
 
+/* Footer */
 footer {
     padding: 20px;
     background-color: #333333;
