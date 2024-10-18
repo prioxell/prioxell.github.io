@@ -21,10 +21,12 @@ body {
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #6B8E23;
+    background: url('abc.png') no-repeat center center; /* Add your background image */
+    background-size: cover;
     color: white;
 }
 
@@ -120,29 +122,19 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-    z-index: 1000;
 }
 
 .overlay-content {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
 }
 
-.overlay ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.overlay li {
-    margin: 15px 0;
-}
-
 .close {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
     cursor: pointer;
 }
