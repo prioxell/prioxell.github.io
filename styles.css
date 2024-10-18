@@ -10,13 +10,13 @@ body {
     color: #FFFFFF;
 }
 
-/* Header Styles */
+/* Invisible Navigation Links */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #000000;
+    background-color: transparent; /* Make the header background transparent */
 }
 
 .logo {
@@ -25,57 +25,61 @@ body {
     color: #6B8E23; /* Olive Green */
 }
 
-.search input {
-    padding: 5px;
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between each link */
+}
+
+.nav-links a {
     font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6B8E23; /* Olive green on hover */
 }
 
 .menu-btn {
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
+    display: none; /* Hide the menu button for now */
 }
 
 /* Hero Section Styles */
 .hero {
     background-image: url('abc.png'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the whole area without stretching */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     padding: 100px 20px;
     text-align: left;
-    min-height: 100vh; /* Ensures the hero section takes up full viewport height */
+    min-height: 100vh;
 }
 
-.hero h1 {
+.hero-content h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem; /* Increased font size for main heading */
-    color: #FFFFFF; /* White color */
+    font-size: 4rem;
+    color: #FFFFFF;
     margin-bottom: 20px;
-    margin-left: 40px; /* Adds space from the left */
-    line-height: 1.2; /* Adjusts spacing between lines */
+    margin-left: 40px;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
     display: block;
+    margin-top: 10px;
 }
 
-/* Adjust the heading to break the line for "to Success." */
-.hero h1 span {
-    display: block; /* Forces a line break before "to Success." */
-    margin-top: 10px; /* Adds some space between "Your Way" and "to Success." */
-}
-
-/* Add smaller text below the main heading */
-.hero h2 {
+.hero-content h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem; /* Smaller font size */
-    color: #FFFFFF; /* White color */
-    margin-top: 20px; /* Adds some space above this text */
-    margin-left: 40px; /* Align with the heading */
-    font-weight: 300; /* Lighter weight for a sleek look */
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: 300;
 }
 
 .explore-btn {
@@ -94,7 +98,7 @@ body {
 /* Services Section Styles */
 .services {
     padding: 50px 20px;
-    background-color: #1E1E1E; /* Darker section background */
+    background-color: #1E1E1E;
     text-align: center;
 }
 
@@ -108,23 +112,23 @@ body {
 .service-cards {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Make it responsive */
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: #f4f4f4;
     color: #000000;
     padding: 20px;
-    margin: 10px; /* Added spacing */
-    width: 280px; /* Fixed width */
+    margin: 10px;
+    width: 280px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Added hover effect */
+    transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 .card h3 {
@@ -155,7 +159,7 @@ body {
 /* Story Section Styles */
 .story {
     padding: 50px 20px;
-    background-color: #2B2B2B; /* Story section background */
+    background-color: #2B2B2B;
     text-align: center;
 }
 
@@ -181,7 +185,7 @@ body {
 /* Insights Section Styles */
 .insights {
     padding: 50px 20px;
-    background-color: #1E1E1E; /* Insights section background */
+    background-color: #1E1E1E;
     text-align: center;
 }
 
@@ -194,15 +198,15 @@ body {
 .insight-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Make it responsive */
+    flex-wrap: wrap;
 }
 
 .insight {
-    width: 280px; /* Fixed width */
+    width: 280px;
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
-    margin: 10px; /* Added spacing */
+    margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
