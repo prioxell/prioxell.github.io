@@ -21,9 +21,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Occupy 100% of the viewport height */
-    position: relative;
-    z-index: 1;
+    height: 80px; /* Set height to accommodate navbar items */
+    position: fixed; /* Keep navbar fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
 /* Adjusted Navbar Content */
@@ -31,13 +34,11 @@ body {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF; /* White for contrast with the background */
-    z-index: 10; /* Ensure it's visible over the background */
 }
 
 .nav-links {
     display: flex;
     gap: 20px; /* Space between each link */
-    z-index: 10; /* Ensure it's visible */
 }
 
 .nav-links a {
@@ -60,9 +61,10 @@ body {
 .hero {
     background-color: transparent; /* Transparent as background is now in navbar */
     color: white;
-    padding: 100px 20px;
+    padding: 100px 20px; /* Adjust top padding to create space below navbar */
     text-align: left;
-    min-height: 40vh; /* Adjusted to occupy remaining space */
+    min-height: calc(100vh - 80px); /* Adjusted to occupy remaining space */
+    margin-top: 80px; /* Add top margin equal to navbar height */
 }
 
 .hero-content h1 {
@@ -98,7 +100,6 @@ body {
 .explore-btn:hover {
     background-color: #556B2F; /* Darkened Olive Green Hover */
 }
-
 
 /* Services Section Styles */
 .services {
@@ -200,5 +201,4 @@ body {
     margin-bottom: 30px;
 }
 
-.insight-grid {
-    display
+/* Add the rest of your CSS here... */
