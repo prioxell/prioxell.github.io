@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +11,9 @@ body {
     color: #FFFFFF;
 }
 
-/* Navigation Bar Styles */
+/* Navigation Bar */
 nav {
-    background-color: #6B8E23; /* Olive green background */
+    background-color: #6B8E23;
     padding: 15px 0;
     text-align: center;
     position: fixed;
@@ -26,8 +26,6 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -47,36 +45,18 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #556B2F; /* Darker olive */
+    background-color: #556B2F;
     border-radius: 5px;
 }
 
-/* Adjusting top margin to accommodate fixed nav bar */
+/* Adjusting top margin to avoid overlap with fixed navbar */
 body {
     margin-top: 70px;
 }
 
-/* Brand Logo (Top Left) */
-.brand-logo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 10px; /* Adjusted letter spacing */
-    color: #6B8E23; /* Olive Green */
-    padding: 20px;
-    position: absolute;
-    top: 70px; /* Adjusted to appear below the nav bar */
-    left: 20px;
-    z-index: 10;
-}
-
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
-    background-image: url('abc.png'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #333; /* Placeholder background color */
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -86,101 +66,32 @@ body {
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    line-height: 1.2;
 }
 
-.hero h1 span {
-    display: block;
-    margin-top: 10px;
-}
-
-.hero h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    margin-top: 20px;
-    font-weight: 300;
-}
-
-/* Center the explore button */
 .explore-btn {
-    padding: 10px 20px;
     background-color: #6B8E23;
-    color: #FFFFFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
     border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-top: 20px;
 }
 
-.explore-btn:hover {
-    background-color: #556B2F;
-}
-
-/* Services Section Styles */
+/* Services Section */
 .services {
-    padding: 50px 20px;
+    padding: 50px;
     background-color: #1E1E1E;
     text-align: center;
 }
 
 .services h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     color: #6B8E23;
-    margin-bottom: 30px;
 }
 
-.service-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #f4f4f4;
-    color: #000000;
-    padding: 20px;
-    margin: 10px;
-    width: 280px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card h3 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #6B8E23;
-}
-
-/* Buttons */
-.book-btn, .view-btn {
-    padding: 10px 20px;
-    background-color: #6B8E23;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-}
-
-.book-btn:hover, .view-btn:hover {
-    background-color: #556B2F;
-}
-
-/* Story Section Styles */
+/* About Section */
 .story {
-    padding: 50px 20px;
+    padding: 50px;
     background-color: #2B2B2B;
-    text-align: center;
 }
 
 .story h2 {
@@ -188,58 +99,21 @@ body {
     color: #6B8E23;
 }
 
-.learn-btn {
-    padding: 10px 20px;
-    background-color: #6B8E23;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-}
-
-.learn-btn:hover {
-    background-color: #556B2F;
-}
-
-/* Insights Section Styles */
-.insights {
-    padding: 50px 20px;
-    background-color: #1E1E1E;
+/* Articles Section */
+.articles {
+    padding: 50px;
+    background-color: #2B2B2B;
     text-align: center;
 }
 
-.insights h2 {
-    font-size: 2.5rem;
+.articles h2 {
+    font-size: 2rem;
     color: #6B8E23;
-    margin-bottom: 30px;
 }
 
-.insight-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.insight {
-    width: 280px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.insight img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Footer Styles */
+/* Footer */
 footer {
     padding: 20px;
-    background-color: #333333;
-    color: white;
+    background-color: #333;
     text-align: center;
-    font-size: 0.9rem;
 }
