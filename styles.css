@@ -56,7 +56,7 @@ This will ensure that the body
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('abc.png');
+    background-image: url('abc.png'); /* Ensure this is the correct image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
