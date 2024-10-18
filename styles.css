@@ -6,105 +6,76 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #1E1E1E; /* Dark background for sleek design */
+    background: linear-gradient(to bottom, #1E1E1E, #2B2B2B);
     color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    z-index: 100;
 }
 
 /* Header Styles */
-.header {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px; /* Adds spacing for a cleaner look */
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background-color 0.3s ease-in-out; /* For smooth transition when scrolling */
+    padding: 20px;
+    background-color: #000000;
 }
 
-/* Brand Logo - Adjusted for more prominence */
-.brand-logo {
-    font-size: 2.5rem;
+.logo {
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: #6B8E23; /* Olive green */
-    letter-spacing: 0.1em;
+    color: #6B8E23; /* Olive Green */
 }
 
-/* Navigation Styles */
-.nav-links {
-    display: flex;
-    gap: 40px; /* Spacing between links */
+.search input {
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
 }
 
-.nav-item {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Open Sans', sans-serif;
-    transition: color 0.3s ease-in-out;
-    position: relative;
-}
-
-.nav-item::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #6B8E23;
-    left: 0;
-    bottom: -5px;
-    transition: width 0.3s;
-}
-
-.nav-item:hover::after {
-    width: 100%;
-}
-
-.nav-item:hover {
-    color: #6B8E23; /* Olive hover color */
-}
-
-/* Background Change on Scroll */
-.header.scrolled {
-    background-color: #1E1E1E; /* Darkens the header on scroll */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.menu-btn {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('abc.png'); /* Ensure this is the correct image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url('abc.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the whole area without stretching */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
     color: white;
-    padding: 150px 20px; /* Adjusted padding for fixed header */
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 100px 20px;
+    text-align: left;
+    min-height: 100vh; /* Ensures the hero section takes up full viewport height */
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
-    color: #FFFFFF;
+    font-size: 4rem; /* Increased font size for main heading */
+    color: #FFFFFF; /* White color */
     margin-bottom: 20px;
+    margin-left: 40px; /* Adds space from the left */
+    line-height: 1.2; /* Adjusts spacing between lines */
+    display: block;
 }
 
+/* Adjust the heading to break the line for "to Success." */
+.hero h1 span {
+    display: block; /* Forces a line break before "to Success." */
+    margin-top: 10px; /* Adds some space between "Your Way" and "to Success." */
+}
+
+/* Add smaller text below the main heading */
 .hero h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    margin-top: 20px;
+    font-size: 1.8rem; /* Smaller font size */
+    color: #FFFFFF; /* White color */
+    margin-top: 20px; /* Adds some space above this text */
+    margin-left: 40px; /* Align with the heading */
+    font-weight: 300; /* Lighter weight for a sleek look */
 }
 
 .explore-btn {
@@ -114,18 +85,16 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    margin: 30px auto;
-    transition: background-color 0.3s;
 }
 
 .explore-btn:hover {
-    background-color: #556B2F;
+    background-color: #556B2F; /* Darkened Olive Green Hover */
 }
 
-/* Services Section */
+/* Services Section Styles */
 .services {
     padding: 50px 20px;
-    background-color: #1E1E1E;
+    background-color: #1E1E1E; /* Darker section background */
     text-align: center;
 }
 
@@ -138,19 +107,61 @@ body {
 
 .service-cards {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap; /* Make it responsive */
 }
 
 .card {
     background-color: #f4f4f4;
-    color: #000;
+    color: #000000;
     padding: 20px;
-    margin: 10px;
-    width: 280px;
+    margin: 10px; /* Added spacing */
+    width: 280px; /* Fixed width */
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Added hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #6B8E23;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.book-btn, .view-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover, .view-btn:hover {
+    background-color: #556B2F;
+}
+
+/* Story Section Styles */
+.story {
+    padding: 50px 20px;
+    background-color: #2B2B2B; /* Story section background */
+    text-align: center;
+}
+
+.story h2 {
+    font-size: 2rem;
+    color: #6B8E23;
 }
 
 .learn-btn {
@@ -167,27 +178,43 @@ body {
     background-color: #556B2F;
 }
 
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
+/* Insights Section Styles */
+.insights {
+    padding: 50px 20px;
+    background-color: #1E1E1E; /* Insights section background */
+    text-align: center;
+}
 
-    .hero h2 {
-        font-size: 1.2rem;
-    }
+.insights h2 {
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 30px;
+}
 
-    .explore-btn {
-        padding: 8px 16px;
-    }
+.insight-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Make it responsive */
+}
 
-    .service-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+.insight {
+    width: 280px; /* Fixed width */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Added spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-    .insight {
-        width: 100%;
-        margin: 10px 0;
-    }
+.insight img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
 }
