@@ -24,12 +24,13 @@ This will ensure that the body
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: transparent; /* Changed to transparent */
-    position: fixed; /* Changed to fixed for better visibility */
+    background-color: transparent; /* Set this to transparent */
+    position: fixed; /* Keeps header fixed at the top */
     width: 100%;
     z-index: 1000;
 }
 
+/* Adjusting Brand Name */
 .brand-logo {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
@@ -37,21 +38,22 @@ This will ensure that the body
     letter-spacing: 0.221em;
 }
 
+/* Navigation Links */
 .nav-links {
     display: flex;
 }
 
 .nav-item {
     margin-left: 30px;
-    color: white; 
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
 }
 
+/* Navigation Item Hover Effect */
 .nav-item:hover {
     color: #6B8E23; /* Hover effect with brand color */
-    text-decoration: none;
 }
 
 
