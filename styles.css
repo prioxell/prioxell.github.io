@@ -5,8 +5,16 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(to bottom, #1E1E1E, #2B2B2B);
+    background-color: transparent;
+    position: absolute; /* Ensure it stays on top of the hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Keeps it above other elements */
+
     color: #FFFFFF;
 }
 
@@ -15,12 +23,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: transparent; /* Transparent background */
-    position: sticky;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent effect */
+    position: absolute; /* Make sure it's positioned at the top */
     top: 0;
-    width: 100%;
-    z-index: 1000; /* Keeps it above other elements */
+    left: 0;
+    right: 0;
+    margin: 0; /* Remove any margin */
+    width: 100%; /* Ensure full width */
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 .brand-logo {
