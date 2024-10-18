@@ -25,13 +25,10 @@ body {
     align-items: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8); /* Transparent effect */
-    position: absolute; /* Make sure it's positioned at the top */
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0; /* Remove any margin */
-    width: 100%; /* Ensure full width */
-    z-index: 1000; /* Ensure it stays on top */
+    position: relative; /* This ensures it scrolls with the page */
+    margin: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .brand-logo {
