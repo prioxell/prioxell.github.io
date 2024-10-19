@@ -118,12 +118,13 @@ body.loaded .story h2 {
     text-align: center;
     color: #fff;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; 
 }
 
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9; /* Slightly fade when hovered */
 }
 
 .card h3 {
