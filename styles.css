@@ -184,10 +184,9 @@ body.loaded .story h2 {
 }
 
 /* Insights Section */
-/* Insights Section */
 .insights {
     padding: 50px 20px;
-    background-color: #1E1E1E;
+    background-color: #1E1E1E; /* Keep the overall section darker */
     text-align: center;
 }
 
@@ -198,32 +197,29 @@ body.loaded .story h2 {
 }
 
 .insight-grid {
-    display: flex; /* Ensure this is set to flex */
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .insight {
     width: 320px;
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
     border-radius: 10px;
     padding: 20px;
-    margin: 20px; /* Margin around each insight card */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .insight:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for emphasis */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on hover */
 }
 
 .insight img {
     width: 100%;
     border-radius: 10px;
-    opacity: 0.9; /* Slightly dimmed */
-    transition: opacity 0.3s ease;
 }
 
 .insight img:hover {
