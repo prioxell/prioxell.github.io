@@ -182,40 +182,53 @@ body.loaded .story h2 {
 /* Insights Section */
 .insights {
     padding: 50px 20px;
-    background-color: #1E1E1E;
+    background-color: #1A1A1A; /* Darker background for contrast */
     text-align: center;
 }
 
 .insights h2 {
     font-size: 2.5rem;
-    color: #6B8E23;
+    color: #8FBC8F; /* Slightly lighter for contrast */
     margin-bottom: 30px;
-}
-
-.insight-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .insight {
     width: 320px;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #333, #444); /* Dark gradient background */
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #FFFFFF; /* White text for contrast */
 }
 
 .insight:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for emphasis */
 }
 
 .insight img {
     width: 100%;
     border-radius: 10px;
+    opacity: 0.9; /* Slightly dimmed */
+    transition: opacity 0.3s ease;
+}
+
+.insight img:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.insight h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #8FBC8F; /* Light green for better readability */
+}
+
+.insight p {
+    font-size: 1rem;
+    color: #E0E0E0; /* Lighter text for readability */
+    margin-bottom: 20px;
 }
 
 /* Footer */
