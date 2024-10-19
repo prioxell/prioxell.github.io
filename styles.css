@@ -247,3 +247,22 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Adjust icon size */
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
