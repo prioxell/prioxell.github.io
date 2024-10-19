@@ -33,8 +33,23 @@ body {
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: center;
+    text-align: left; /* Left-aligned */
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Smooth transition for hero headings */
+.hero h1, .hero h2 {
+    opacity: 0;
+    transform: translateX(-50px); /* Start off-screen to the left */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero h1.transition, .hero h2.transition {
+    opacity: 1;
+    transform: translateX(0); /* Slide into place */
 }
 
 .hero h1 {
@@ -67,10 +82,12 @@ body {
     cursor: pointer;
     border-radius: 20px;
     margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .explore-btn:hover {
     background-color: #556B2F;
+    transform: translateY(-3px);
 }
 
 /* Services Section */
@@ -193,6 +210,7 @@ body {
     border-radius: 10px;
 }
 
+/* Footer */
 footer {
     padding: 20px;
     background-color: #333333;
