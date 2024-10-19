@@ -10,7 +10,7 @@ body {
     color: #FFFFFF;
 }
 
-/* Add smooth transition for headings */
+/* Smooth transition for headings */
 body.loaded .hero h1, 
 body.loaded .hero h2, 
 body.loaded .story h2 {
@@ -18,7 +18,7 @@ body.loaded .story h2 {
     transform: translateY(0);
 }
 
-/* Brand Logo (Top Left) */
+/* Brand Logo */
 .brand-logo {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -32,162 +32,121 @@ body.loaded .story h2 {
     z-index: 10;
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
-    display: flex; /* Use flexbox to center content */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    background-image: url('abc1.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 100px 20px;
-    min-height: 100vh;
-}
-
-.hero h1, .hero h2 {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
-    color: #FFFFFF;
-    margin-bottom: 20px;
     line-height: 1.2;
-}
-
-.hero h1 span {
-    display: block;
-    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
 }
 
 .hero h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    margin-top: 20px;
-    font-weight: 300;
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(-20px);
 }
 
-/* Explore button styling */
 .explore-btn {
-    padding: 10px 20px;
     background-color: #6B8E23;
-    color: #FFFFFF;
+    color: white;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 20px;
-    margin-top: 40px; /* Adjust this value to move the button down */
-    font-size: 1rem; /* Optionally increase font size */
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 .explore-btn:hover {
-    background-color: #556B2F;
+    background-color: #4C7031;
 }
 
 /* Services Section */
 .services {
     padding: 50px 20px;
-    background-color: #1E1E1E;
     text-align: center;
 }
 
 .services h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     color: #6B8E23;
     margin-bottom: 30px;
 }
 
 .service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
-    background: linear-gradient(135deg, #6B8E23, #8FBC8F); 
-    padding: 30px;
-    text-align: center;
-    color: #fff;
+    background-color: #3E3E3E;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; 
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    opacity: 0.9; /* Slightly fade when hovered */
 }
 
 .card h3 {
     margin-bottom: 15px;
-    font-size: 1.8rem;
-    color: #FFFFFF;
 }
 
 .card p {
     margin-bottom: 20px;
-    font-size: 1rem;
-    color: #FFFFFF;
 }
 
-.learn-more-btn, .learn-btn {
-    padding: 10px 20px;
+.learn-more-btn {
     background-color: #6B8E23;
     color: white;
+    padding: 10px 15px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
-.learn-more-btn:hover, .learn-btn:hover {
-    background-color: #556B2F;
-    transform: translateY(-3px);
+.learn-more-btn:hover {
+    background-color: #4C7031;
 }
 
 /* Story Section */
 .story {
-    padding: 60px 30px; 
-    background-color: #2B2B2B;
-    text-align: left; 
-    border-left: 5px solid #6B8E23; 
-    max-width: 800px;
-    margin: 0 auto; 
-    line-height: 1.6;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .story h2 {
-    font-size: 2.2rem; 
+    font-size: 2.2rem;
     color: #6B8E23;
     margin-bottom: 20px;
 }
 
 .story p {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     color: #f4f4f4;
     margin-bottom: 20px;
-}
-
-.story-learn {
-    margin-top: 40px;
 }
 
 /* Insights Section */
 .insights {
     padding: 50px 20px;
-    background-color: #1E1E1E; /* Keep the overall section darker */
     text-align: center;
 }
 
@@ -204,66 +163,38 @@ body.loaded .story h2 {
 }
 
 .insight {
-    width: 320px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    background-color: #3E3E3E;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
 }
 
 .insight:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on hover */
 }
 
-.insight img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.insight img:hover {
-    opacity: 1; /* Full opacity on hover */
-}
-
-.insight h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: #8FBC8F; /* Light green for better readability */
-}
-
-.insight p {
-    font-size: 1rem;
-    color: #E0E0E0; /* Lighter text for readability */
-    margin-bottom: 20px;
-}
-
-/* Footer */
+/* Footer Section */
 footer {
+    background-color: #2B2B2B;
     padding: 20px;
-    background-color: #333333;
-    color: white;
     text-align: center;
-    font-size: 0.9rem;
 }
 
+/* Social Icons */
 .social-icons {
-    display: flex;
-    justify-content: center;
     margin-top: 10px;
 }
 
 .social-icons a {
     margin: 0 10px;
+    color: white;
+    font-size: 30px;
+    transition: transform 0.2s;
 }
 
-.social-icons img {
-    width: 30px; /* Adjust icon size */
-    height: 30px; /* Adjust icon size */
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2); /* Enlarge icon on hover */
+.social-icons a:hover {
+    transform: scale(1.1);
 }
