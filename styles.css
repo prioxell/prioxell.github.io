@@ -174,7 +174,7 @@ body {
 }
 
 .insight {
-    width: 240px; /* Reduce the width here to make it smaller */
+    width: 280px; /* Reduce the width here to make it smaller */
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
