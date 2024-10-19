@@ -15,8 +15,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    letter-spacing: 10px;
-    color: #6B8E23; 
+    letter-spacing: 10px; /* Adjusted letter spacing */
+    color: #6B8E23; /* Olive Green */
     padding: 20px;
     position: absolute;
     top: 0;
@@ -24,25 +24,49 @@ body {
     z-index: 10;
 }
 
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 /* Hero Section Styles */
 .hero {
-    background-image: url('abc.png'); 
+    background-image: url('abc.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: center;
+    text-align: center; /* Center align the content */
     min-height: 100vh;
 }
 
+/* Heading Animation */
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     color: #FFFFFF;
     margin-bottom: 20px;
     line-height: 1.2;
+    animation: fadeIn 1.2s ease-out forwards; /* Fade-in animation */
 }
 
 .hero h1 span {
@@ -50,15 +74,17 @@ body {
     margin-top: 10px;
 }
 
+/* Subheading Animation */
 .hero h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     color: #FFFFFF;
     margin-top: 20px;
     font-weight: 300;
+    animation: slideIn 1.5s ease-out forwards; /* Slide-in animation */
 }
 
-/* Explore button styling */
+/* Center the explore button */
 .explore-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -73,7 +99,7 @@ body {
     background-color: #556B2F;
 }
 
-/* Services Section */
+/* Services Section Styles */
 .services {
     padding: 50px 20px;
     background-color: #1E1E1E;
@@ -87,39 +113,35 @@ body {
     margin-bottom: 30px;
 }
 
+/* Updated layout using grid for better alignment */
 .service-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 20px;
     justify-items: center;
 }
 
 .card {
-    background: linear-gradient(135deg, #6B8E23, #8FBC8F); 
-    padding: 30px;
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 20px;
     text-align: center;
-    color: #fff;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-}
-
-.card p {
     margin-bottom: 20px;
-    font-size: 1rem;
-    color: #FFFFFF;
+    font-size: 1.5rem;
+    color: #6B8E23;
 }
 
+/* Updated button to "Learn More" */
 .learn-more-btn, .learn-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -127,18 +149,17 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Make it a block element */
+    margin-top: 20px; /* Add some space above the button */
 }
 
 .learn-more-btn:hover, .learn-btn:hover {
     background-color: #556B2F;
-    transform: translateY(-3px);
 }
 
-/* Story Section */
+/* Story Section Styles */
 .story {
     padding: 50px 20px;
     background-color: #2B2B2B;
@@ -151,10 +172,10 @@ body {
 }
 
 .story-learn {
-    margin-top: 40px;
+    margin-top: 20px; /* Adjust spacing for the learn more button */
 }
 
-/* Insights Section */
+/* Insights Section Styles */
 .insights {
     padding: 50px 20px;
     background-color: #1E1E1E;
@@ -174,16 +195,12 @@ body {
 }
 
 .insight {
-    width: 280px; /* Reduce the width here to make it smaller */
+    width: 280px;
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-.insight:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .insight img {
