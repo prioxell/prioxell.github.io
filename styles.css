@@ -174,7 +174,7 @@ body {
 }
 
 .insight {
-    width: 320px;
+    width: 240px; /* Reduce the width here to make it smaller */
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
@@ -182,7 +182,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .insight:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
