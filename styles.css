@@ -249,6 +249,16 @@ footer {
     margin-top: 40px;
 }
 
+footer .contact-details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+footer .contact-details p {
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+
 footer .social-icons {
     margin-top: 10px;
 }
