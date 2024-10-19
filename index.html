@@ -6,6 +6,8 @@
     <title>Prioxell</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- AOS CSS for scroll animations (optional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
 
@@ -16,10 +18,12 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>
-            Simplify and Organize Your Path <span>to Excellence</span>
-        </h1>
-        <h2>Find Clarity in Simplicity</h2>
+        <div class="hero">
+            <h1>
+                Simplify and Organize Your Path <span>to Excellence</span>
+            </h1>
+            <h2>Find Clarity in Simplicity</h2>
+        </div>
         <button class="explore-btn">Explore</button>
     </section>
 
@@ -27,16 +31,19 @@
     <section class="services">
         <h2>Services</h2>
         <div class="service-cards">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
                 <h3>Success Coaching</h3>
+                <p>One-on-one coaching to define your goals and accelerate your progress.</p>
                 <a href="story.html" class="learn-more-btn">Learn More</a>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
                 <h3>Productivity Optimization</h3>
+                <p>Tools and techniques to streamline your workflow and boost efficiency.</p>
                 <a href="story.html" class="learn-more-btn">Learn More</a>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
                 <h3>Focus Enhancement</h3>
+                <p>Strategies to sharpen focus, improve attention, and achieve more in less time.</p>
                 <a href="story.html" class="learn-more-btn">Learn More</a>
             </div>
         </div>
@@ -45,7 +52,7 @@
     <!-- Story Section -->
     <section class="story">
         <h2>Discover Our Story</h2>
-        <p>At Prioxell, we empower individuals to achieve their full potential by simplifying systems and providing innovative productivity tools. Our goal is to help you overcome the complexities of to-do lists and procrastination with research-backed methods. Whether it's enhancing focus or boosting productivity, Prioxell equips you with the tools to reach new heights. Let's create a world where achieving greatness is about simplifying, not complicating.</p>
+        <p>Prioxell is a brand dedicated to helping individuals achieve their goals by enhancing productivity through innovative tools and services. We believe that achieving greatness is about simplifying systems rather than complicating them, allowing everyone to reach their highest potential. With our unique research-backed method on the horizon, we aim to address the common challenges associated with to-do lists, ensuring that our tools empower you to overcome procrastination and enhance focus.</p>
         <div class="story-learn">
             <a href="story.html" class="learn-btn">Learn More</a>
         </div>
@@ -55,20 +62,20 @@
     <section class="insights">
         <h2>Insights</h2>
         <div class="insight-grid">
-            <div class="insight">
+            <div class="insight" data-aos="fade-up" data-aos-delay="200">
                 <img src="1.png" alt="Insight 1">
                 <h3>Achieve Your Potential: Secrets to...</h3>
-                <p>Discover the strategies to unleash your full potential in the fast-paced world of business and productivity.</p>
+                <p>In the fast-paced world of business and productivity, achieving your full potential...</p>
             </div>
-            <div class="insight">
+            <div class="insight" data-aos="fade-up" data-aos-delay="400">
                 <img src="2.png" alt="Insight 2">
                 <h3>Premium Solutions for Success...</h3>
-                <p>Maximizing productivity in today’s world requires premium solutions tailored to success.</p>
+                <p>In the fast-paced world we live in today, maximizing productivity and achieving...</p>
             </div>
-            <div class="insight">
+            <div class="insight" data-aos="fade-up" data-aos-delay="600">
                 <img src="3.png" alt="Insight 3">
                 <h3>Maximize Productivity: Strategies...</h3>
-                <p>Explore key strategies to elevate productivity both in personal and professional spaces.</p>
+                <p>When it comes to achieving maximum productivity in both individual and business...</p>
             </div>
         </div>
     </section>
@@ -77,6 +84,12 @@
     <footer>
         <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
     </footer>
+
+    <!-- AOS JS for scroll animations (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
