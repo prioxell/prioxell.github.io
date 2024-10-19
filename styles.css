@@ -33,23 +33,8 @@ body {
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: left; /* Left-aligned */
+    text-align: left; /* Left-align text */
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* Smooth transition for hero headings */
-.hero h1, .hero h2 {
-    opacity: 0;
-    transform: translateX(-50px); /* Start off-screen to the left */
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.hero h1.transition, .hero h2.transition {
-    opacity: 1;
-    transform: translateX(0); /* Slide into place */
 }
 
 .hero h1 {
@@ -58,6 +43,9 @@ body {
     color: #FFFFFF;
     margin-bottom: 20px;
     line-height: 1.2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .hero h1 span {
@@ -71,23 +59,31 @@ body {
     color: #FFFFFF;
     margin-top: 20px;
     font-weight: 300;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+body.loaded .hero h1, 
+body.loaded .hero h2 {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Explore button styling */
 .explore-btn {
-    padding: 10px 20px;
+    padding: 8px 15px; /* Reduced padding */
     background-color: #6B8E23;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
     border-radius: 20px;
     margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem; /* Smaller font size */
 }
 
 .explore-btn:hover {
     background-color: #556B2F;
-    transform: translateY(-3px);
 }
 
 /* Services Section */
@@ -157,18 +153,38 @@ body {
 
 /* Story Section */
 .story {
-    padding: 50px 20px;
+    padding: 60px 30px; /* More padding for spacing */
     background-color: #2B2B2B;
-    text-align: center;
+    text-align: left; /* Left-aligned text */
+    border-left: 5px solid #6B8E23; /* Added border for visual effect */
+    max-width: 800px;
+    margin: 0 auto; /* Center the section */
+    line-height: 1.6;
 }
 
 .story h2 {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Slightly larger heading */
     color: #6B8E23;
+    margin-bottom: 20px;
 }
 
-.story-learn {
-    margin-top: 40px;
+.story p {
+    font-size: 1.1rem; /* Adjusted text size */
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.story-learn a.learn-btn {
+    padding: 10px 25px;
+    background-color: #6B8E23;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.story-learn a.learn-btn:hover {
+    background-color: #556B2F;
 }
 
 /* Insights Section */
@@ -210,7 +226,6 @@ body {
     border-radius: 10px;
 }
 
-/* Footer */
 footer {
     padding: 20px;
     background-color: #333333;
