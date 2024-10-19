@@ -34,6 +34,10 @@ body.loaded .story h2 {
 
 /* Hero Section Styles */
 .hero {
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     background-image: url('abc1.png'); 
     background-size: cover;
     background-position: center;
@@ -41,7 +45,6 @@ body.loaded .story h2 {
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
-    text-align: left; /* Left aligned */
     min-height: 100vh;
 }
 
@@ -80,7 +83,8 @@ body.loaded .story h2 {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 40px; /* Adjust this value to move the button down */
+    font-size: 1rem; /* Optionally increase font size */
 }
 
 .explore-btn:hover {
