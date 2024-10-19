@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
@@ -13,20 +13,13 @@ header {
 
 article {
     padding: 20px;
-    margin: 0 auto;
     max-width: 900px;
+    margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.gallery {
-    display: flex;
-    justify-content: space-between;
-}
-
-.gallery img {
-    width: 22%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+h2 {
+    color: #008080;
+    margin-top: 20px;
 }
