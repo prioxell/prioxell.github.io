@@ -113,77 +113,109 @@ body.loaded .story h2 {
 }
 
 .card {
-    background: linear-gradient(135deg, #4A4A4A, #2B2B2B);
-    border-radius: 15px;
-    padding: 20px;
+    background: linear-gradient(135deg, #6B8E23, #8FBC8F); 
+    padding: 30px;
     text-align: center;
-    transition: transform 0.3s;
-    color: #FFFFFF;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; 
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9; /* Slightly fade when hovered */
 }
 
 .card h3 {
-    font-size: 1.8rem;
     margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #FFFFFF;
 }
 
 .card p {
+    margin-bottom: 20px;
     font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.learn-more-btn {
-    background-color: #6B8E23;
     color: #FFFFFF;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
 }
 
-.learn-more-btn:hover {
+.learn-more-btn, .learn-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.learn-more-btn:hover, .learn-btn:hover {
     background-color: #556B2F;
+    transform: translateY(-3px);
 }
 
 /* Story Section */
 .story {
-    padding: 50px 20px;
-    text-align: center;
+    padding: 60px 30px; 
     background-color: #2B2B2B;
+    text-align: left; 
+    border-left: 5px solid #6B8E23; 
+    max-width: 800px;
+    margin: 0 auto; 
+    line-height: 1.6;
 }
 
 .story h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem; 
     color: #6B8E23;
+    margin-bottom: 20px;
 }
 
 .story p {
-    font-size: 1rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem; 
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.story-learn {
+    margin-top: 40px;
 }
 
 /* Insights Section */
 .insights {
     padding: 50px 20px;
+    background-color: #1E1E1E; /* Keep the overall section darker */
     text-align: center;
-    background-color: #1E1E1E;
 }
 
 .insights h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
     color: #6B8E23;
+    margin-bottom: 30px;
 }
 
 .insight-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.insight {
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insight:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on hover */
 }
 
 .insight img {
@@ -191,21 +223,29 @@ body.loaded .story h2 {
     border-radius: 10px;
 }
 
+.insight img:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
 .insight h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #8FBC8F; /* Light green for better readability */
 }
 
 .insight p {
-    margin: 10px 0;
+    font-size: 1rem;
+    color: #E0E0E0; /* Lighter text for readability */
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-    text-align: center;
     padding: 20px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 footer .social-icons {
