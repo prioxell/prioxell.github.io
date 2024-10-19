@@ -89,6 +89,12 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        // Trigger smooth transitions for the hero headings
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.hero h1').classList.add('transition');
+            document.querySelector('.hero h2').classList.add('transition');
+        });
     </script>
 
 </body>
