@@ -6,10 +6,13 @@
     <title>Prioxell</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- AOS CSS for scroll animations (optional) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
 </head>
-<body class="loaded">
+<body>
 
     <!-- Logo Section (Brand Name) -->
     <div class="brand-logo">
@@ -18,12 +21,10 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero">
-            <h1>
-                Simplify and Organize Your Path <span>to Excellence</span>
-            </h1>
-            <h2>Find Clarity in Simplicity</h2>
-        </div>
+        <h1>
+            Simplify and Organize Your Path <span>to Excellence</span>
+        </h1>
+        <h2>Find Clarity in Simplicity</h2>
         <button class="explore-btn">Explore</button>
     </section>
 
@@ -87,7 +88,6 @@
         <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
     </footer>
 
-    <!-- AOS JS for scroll animations (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
