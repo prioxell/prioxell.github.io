@@ -249,6 +249,8 @@ footer {
 }
 
 .social-icons {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 
@@ -257,12 +259,11 @@ footer {
 }
 
 .social-icons img {
-    width: 24px; /* Adjust icon size */
-    height: 24px; /* Adjust icon size */
-    vertical-align: middle;
-    transition: transform 0.3s;
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
+    transform: scale(1.2); /* Enlarge icon on hover */
 }
