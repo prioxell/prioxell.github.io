@@ -246,6 +246,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.9rem;
+    margin-top: 40px;
 }
 
 footer .social-icons {
@@ -256,9 +257,11 @@ footer .social-icons a {
     color: #6B8E23; /* Match the color with the brand */
     margin: 0 10px;
     font-size: 1.5rem; /* Increased icon size */
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
 }
 
 footer .social-icons a:hover {
     color: #8FBC8F; /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom on hover */
 }
