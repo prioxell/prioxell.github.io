@@ -1,1 +1,33 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - What, How, and Why</title>
+    <link rel="stylesheet" href="../css/todolist.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List: What, How, and Why</h1>
+    </header>
+    
+    <article>
+        <section>
+            <h2>What is a To-Do List?</h2>
+            <p>In this section, we explain what a to-do list is and why it’s important...</p>
+        </section>
+
+        <section>
+            <h2>How to Use a To-Do List</h2>
+            <p>Here, we explain how you can best utilize a to-do list in your daily life...</p>
+        </section>
+
+        <section>
+            <h2>Why a To-Do List Works</h2>
+            <p>The benefits of using a to-do list include increased productivity and better organization...</p>
+        </section>
+    </article>
+
+</body>
+</html>
