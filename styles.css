@@ -170,7 +170,7 @@ body.loaded .story h2 {
 }
 
 .service-cards {
-    display: grid;
+    display: grid; /* Use grid layout */
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
@@ -180,6 +180,10 @@ body.loaded .story h2 {
     padding: 20px;
     border-radius: 15px;
     transition: transform 0.3s ease;
+    display: flex; /* Flexbox to center content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute space between items */
+    height: 100%; /* Ensure cards expand to fill the grid cell */
 }
 
 .card:hover {
