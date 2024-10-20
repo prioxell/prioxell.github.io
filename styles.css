@@ -1,4 +1,4 @@
-/* General */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +18,13 @@ body.loaded .story h2 {
     transform: translateY(0);
 }
 
-/* Brand Logo */
+/* Brand Logo (Top Left) */
 .brand-logo {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 10px;
-    color: #6B8E23;
+    color: #6B8E23; 
     padding: 20px;
     position: absolute;
     top: 0;
@@ -38,21 +38,67 @@ body.loaded .story h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('abc1.png');
+    background-image: url('abc1.png'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
     min-height: 100vh;
 }
 
-/* Organize Tasks Section */
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    display: block;
+    margin-top: 10px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23; 
+    color: #FFFFFF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #8FBC8F;
+}
+
+/* Organize Your Tasks Section */
 .organize-tasks {
-    background-color: #333;
+    background: linear-gradient(to right, #3d9970, #2e8b57); /* Olive green gradient */
     color: white;
     padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.organize-tasks::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background-pattern.png'); /* Example background pattern */
+    opacity: 0.1; /* Subtle pattern effect */
+    z-index: 1;
 }
 
 .content-wrapper {
@@ -60,44 +106,58 @@ body.loaded .story h2 {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .text-content {
     flex: 1;
     padding-right: 40px;
+    max-width: 600px; /* Limit width to improve layout */
+}
+
+.text-content h2 {
+    font-size: 2.5rem; /* Increased font size for heading */
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.explore-tasks-btn {
+    background-color: #fff;
+    color: #2e8b57; /* Match the green */
+    padding: 12px 25px;
+    border: 2px solid #2e8b57; /* Add border */
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.explore-tasks-btn:hover {
+    background-color: #2e8b57;
+    color: white;
 }
 
 .image-content {
     flex: 1;
-    max-width: 40%;
 }
 
 .image-content img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     object-fit: contain;
     border-radius: 20px;
 }
 
-.explore-tasks-btn {
-    background-color: #6B8E23;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-.explore-tasks-btn:hover {
-    background-color: #8FBC8F;
-}
-
 /* Services Section */
 .services {
     padding: 80px 20px;
-    background-color: #292929;
+    background: linear-gradient(135deg, #6b8e23, #3d9970); /* Olive green gradient */
     color: white;
     text-align: center;
 }
@@ -105,6 +165,8 @@ body.loaded .story h2 {
 .services h2 {
     margin-bottom: 40px;
     font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Enhance heading */
 }
 
 .service-cards {
@@ -114,7 +176,7 @@ body.loaded .story h2 {
 }
 
 .card {
-    background-color: #3C3C3C;
+    background-color: #555;
     padding: 20px;
     border-radius: 15px;
     transition: transform 0.3s ease;
@@ -135,6 +197,8 @@ body.loaded .story h2 {
     border: none;
     border-radius: 20px;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -155,15 +219,6 @@ body.loaded .story h2 {
     margin-bottom: 20px;
 }
 
-.story p {
-    margin: 0 auto;
-    max-width: 800px;
-    line-height: 1.6;
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 40px;
-}
-
 .story-learn .learn-btn {
     padding: 10px 20px;
     background-color: #6B8E23;
@@ -172,7 +227,6 @@ body.loaded .story h2 {
     border-radius: 20px;
     text-decoration: none;
     cursor: pointer;
-    display: inline-block;
 }
 
 .story-learn .learn-btn:hover {
@@ -202,7 +256,6 @@ body.loaded .story h2 {
     background-color: #333;
     padding: 20px;
     border-radius: 15px;
-    text-align: left;
 }
 
 .insight img {
@@ -222,9 +275,9 @@ body.loaded .story h2 {
     border: none;
     border-radius: 20px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: block;
+    display: inline-block;
     margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .learn-more-btn:hover {
@@ -290,10 +343,6 @@ footer .social-icons a:hover {
 
     .insight-grid {
         grid-template-columns: 1fr;
-    }
-
-    .insight {
-        width: 100%;
     }
 
     footer .social-icons a {
