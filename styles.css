@@ -337,3 +337,41 @@ footer .social-icons a:hover {
     color: #8FBC8F; /* Change color on hover */
     transform: scale(1.2); /* Slight zoom on hover */
 }
+
+/* Media Queries for Mobile - New Hero Section */
+@media only screen and (max-width: 768px) {
+    .hero {
+        background-image: url('new-mobile-image.png');  /* Use a mobile-specific image */
+        background-size: cover;
+        background-position: center;
+        padding: 80px 20px; /* Adjust padding for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Adjust heading size for mobile */
+    }
+
+    .hero h2 {
+        font-size: 1.2rem; /* Adjust subheading size */
+        margin-top: 10px;  /* Reduce margin for mobile */
+    }
+
+    /* Optional: Different Layout for Mobile Hero Section */
+    .hero-mobile-content {
+        display: block; /* Mobile specific content */
+        text-align: center; /* Center-align content */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .hero-system-content {
+        display: none; /* Hide the system-specific content in mobile */
+    }
+}
+
+/* Keep the default (system) view unchanged */
+.hero-system-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
