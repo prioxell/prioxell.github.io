@@ -91,68 +91,6 @@ body.loaded .story h2 {
     background-color: #556B2F;
 }
 
-/* Organize Your Tasks Section */
-.organize-tasks {
-    padding: 60px 20px;
-    background-color: #2B2B2B;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.text-content {
-    flex: 1;
-    padding-right: 40px;
-}
-
-.text-content h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    color: #6B8E23;
-    margin-bottom: 20px;
-}
-
-.text-content p {
-    font-size: 1.1rem;
-    color: #f4f4f4;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.explore-tasks-btn {
-    padding: 10px 20px;
-    background-color: #6B8E23;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.explore-tasks-btn:hover {
-    background-color: #556B2F;
-}
-
-.image-content {
-    flex: 1;
-}
-
-.image-content img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
 /* Services Section */
 .services {
     padding: 50px 20px;
@@ -336,42 +274,4 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #8FBC8F; /* Change color on hover */
     transform: scale(1.2); /* Slight zoom on hover */
-}
-
-/* Media Queries for Mobile - New Hero Section */
-@media only screen and (max-width: 768px) {
-    .hero {
-        background-image: url('new-mobile-image.png');  /* Use a mobile-specific image */
-        background-size: cover;
-        background-position: center;
-        padding: 80px 20px; /* Adjust padding for mobile */
-    }
-
-    .hero h1 {
-        font-size: 2rem; /* Adjust heading size for mobile */
-    }
-
-    .hero h2 {
-        font-size: 1.2rem; /* Adjust subheading size */
-        margin-top: 10px;  /* Reduce margin for mobile */
-    }
-
-    /* Optional: Different Layout for Mobile Hero Section */
-    .hero-mobile-content {
-        display: block; /* Mobile specific content */
-        text-align: center; /* Center-align content */
-        padding: 20px; /* Adjust padding */
-    }
-
-    .hero-system-content {
-        display: none; /* Hide the system-specific content in mobile */
-    }
-}
-
-/* Keep the default (system) view unchanged */
-.hero-system-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
