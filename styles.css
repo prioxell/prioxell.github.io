@@ -1,3 +1,4 @@
+/* Reset and Box Sizing */
 * {
     margin: 0;
     padding: 0;
@@ -34,10 +35,10 @@ body.loaded .story h2 {
 
 /* Hero Section Styles */
 .hero {
-    display: flex; /* Use flexbox to center content */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url('abc1.png'); 
     background-size: cover;
     background-position: center;
@@ -83,8 +84,8 @@ body.loaded .story h2 {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    margin-top: 40px; /* Adjust this value to move the button down */
-    font-size: 1rem; /* Optionally increase font size */
+    margin-top: 40px;
+    font-size: 1rem;
 }
 
 .explore-btn:hover {
@@ -124,7 +125,7 @@ body.loaded .story h2 {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    opacity: 0.9; /* Slightly fade when hovered */
+    opacity: 0.9;
 }
 
 .card h3 {
@@ -187,7 +188,7 @@ body.loaded .story h2 {
 /* Insights Section */
 .insights {
     padding: 50px 20px;
-    background-color: #1E1E1E; /* Keep the overall section darker */
+    background-color: #1E1E1E; 
     text-align: center;
 }
 
@@ -205,17 +206,17 @@ body.loaded .story h2 {
 
 .insight {
     width: 320px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .insight:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .insight img {
@@ -224,18 +225,18 @@ body.loaded .story h2 {
 }
 
 .insight img:hover {
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1;
 }
 
 .insight h3 {
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #8FBC8F; /* Light green for better readability */
+    color: #8FBC8F;
 }
 
 .insight p {
     font-size: 1rem;
-    color: #E0E0E0; /* Lighter text for readability */
+    color: #E0E0E0;
     margin-bottom: 20px;
 }
 
@@ -264,67 +265,53 @@ footer .social-icons {
 }
 
 footer .social-icons a {
-    color: #6B8E23; /* Match the color with the brand */
+    color: #6B8E23; 
     margin: 0 10px;
-    font-size: 1.5rem; /* Increased icon size */
+    font-size: 1.5rem;
     transition: color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
 }
 
 footer .social-icons a:hover {
-    color: #8FBC8F; /* Change color on hover */
-    transform: scale(1.2); /* Slight zoom on hover */
+    color: #8FBC8F;
+    transform: scale(1.2);
 }
 
-/* Media Queries for mobile */
+/* Media Queries for Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
-    /* Hero Section Adjustments */
-    .hero {
-        padding: 80px 20px; /* Reduce padding */
-        background-size: cover; /* Ensure full cover */
-        background-position: top; /* Shift the image position to avoid short appearance */
-    }
-
     .hero h1 {
-        font-size: 2.5rem; /* Decrease headline size */
+        font-size: 2.5rem;
     }
 
     .hero h2 {
-        font-size: 1.2rem; /* Decrease subheadline size */
+        font-size: 1.2rem;
     }
 
     .explore-btn {
-        font-size: 0.9rem; /* Adjust button size */
-        padding: 8px 16px; /* Reduce padding */
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 
-    /* Services Section */
     .service-cards {
-        grid-template-columns: 1fr; /* Full width for cards */
-        gap: 20px; /* Smaller gap between cards */
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .card {
-        padding: 20px; /* Reduce padding for cards */
-    }
-
-    /* Insights Section */
     .insight-grid {
-        flex-direction: column; /* Stack insights vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .insight {
-        width: 100%; /* Full width for insight cards */
-        margin: 10px 0; /* Adjust margins */
+        width: 100%;
+        margin: 10px 0;
     }
 
-    /* Footer Adjustments */
     footer {
         padding: 15px;
     }
 
     .social-icons a {
-        font-size: 1.2rem; /* Adjust icon size */
+        font-size: 1.2rem;
     }
 }
