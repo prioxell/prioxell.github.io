@@ -91,6 +91,68 @@ body.loaded .story h2 {
     background-color: #556B2F;
 }
 
+/* Organize Your Tasks Section */
+.organize-tasks {
+    padding: 60px 20px;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.text-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #6B8E23;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.explore-tasks-btn {
+    padding: 10px 20px;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.explore-tasks-btn:hover {
+    background-color: #556B2F;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Services Section */
 .services {
     padding: 50px 20px;
@@ -274,57 +336,4 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #8FBC8F; /* Change color on hover */
     transform: scale(1.2); /* Slight zoom on hover */
-}
-
-/* Media Queries for mobile */
-@media only screen and (max-width: 768px) {
-    /* Hero Section Adjustments */
-    .hero {
-        padding: 80px 20px; /* Reduce padding */
-        background-size: cover; /* Ensure full cover */
-        background-position: top; /* Shift the image position to avoid short appearance */
-    }
-
-    .hero h1 {
-        font-size: 2.5rem; /* Decrease headline size */
-    }
-
-    .hero h2 {
-        font-size: 1.2rem; /* Decrease subheadline size */
-    }
-
-    .explore-btn {
-        font-size: 0.9rem; /* Adjust button size */
-        padding: 8px 16px; /* Reduce padding */
-    }
-
-    /* Services Section */
-    .service-cards {
-        grid-template-columns: 1fr; /* Full width for cards */
-        gap: 20px; /* Smaller gap between cards */
-    }
-
-    .card {
-        padding: 20px; /* Reduce padding for cards */
-    }
-
-    /* Insights Section */
-    .insight-grid {
-        flex-direction: column; /* Stack insights vertically */
-        align-items: center;
-    }
-
-    .insight {
-        width: 100%; /* Full width for insight cards */
-        margin: 10px 0; /* Adjust margins */
-    }
-
-    /* Footer Adjustments */
-    footer {
-        padding: 15px;
-    }
-
-    .social-icons a {
-        font-size: 1.2rem; /* Adjust icon size */
-    }
 }
