@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -40,17 +41,10 @@ body.loaded .story h2 {
     background-image: url('abc1.png'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
     min-height: 100vh;
-}
-
-.hero h1, .hero h2 {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
 }
 
 .hero h1 {
@@ -95,7 +89,6 @@ body.loaded .story h2 {
 
 .content-wrapper {
     display: flex;
-    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -104,7 +97,6 @@ body.loaded .story h2 {
 .text-content {
     flex: 1;
     padding-right: 40px;
-    text-align: center;
 }
 
 .image-content {
@@ -112,7 +104,7 @@ body.loaded .story h2 {
 }
 
 .image-content img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     object-fit: contain;
     border-radius: 20px;
@@ -136,7 +128,7 @@ body.loaded .story h2 {
 /* Services Section */
 .services {
     padding: 80px 20px;
-    background-color: #1E1E1E;
+    background: linear-gradient(135deg, #444, #2E2E2E);
     color: white;
     text-align: center;
 }
@@ -153,11 +145,10 @@ body.loaded .story h2 {
 }
 
 .card {
-    background-color: #444;
+    background-color: #555;
     padding: 20px;
     border-radius: 15px;
     transition: transform 0.3s ease;
-    position: relative;
 }
 
 .card:hover {
@@ -168,10 +159,6 @@ body.loaded .story h2 {
     margin-bottom: 20px;
 }
 
-.card p {
-    margin-bottom: 20px;
-}
-
 .learn-more-btn {
     background-color: #6B8E23;
     color: white;
@@ -179,9 +166,9 @@ body.loaded .story h2 {
     border: none;
     border-radius: 20px;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 20px;
 }
 
 .learn-more-btn:hover {
@@ -238,7 +225,6 @@ body.loaded .story h2 {
     background-color: #333;
     padding: 20px;
     border-radius: 15px;
-    flex: 1;
 }
 
 .insight img {
@@ -252,17 +238,22 @@ body.loaded .story h2 {
 }
 
 .learn-more-btn {
-    position: relative;
-    margin-top: 10px;
+    background-color: #6B8E23;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
     display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.learn-more-btn a {
-    position: absolute;
-    bottom: 10px;
+.learn-more-btn:hover {
+    background-color: #8FBC8F;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     background-color: #1E1E1E;
     color: white;
@@ -321,10 +312,6 @@ footer .social-icons a:hover {
 
     .insight-grid {
         grid-template-columns: 1fr;
-    }
-
-    .insight {
-        width: 100%;
     }
 
     footer .social-icons a {
