@@ -82,9 +82,23 @@ body.loaded .story h2 {
 
 /* Organize Your Tasks Section */
 .organize-tasks {
-    background-color: #333;
+    background: linear-gradient(to right, #3d9970, #2e8b57); /* Olive green gradient */
     color: white;
     padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.organize-tasks::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background-pattern.png'); /* Example background pattern */
+    opacity: 0.1; /* Subtle pattern effect */
+    z-index: 1;
 }
 
 .content-wrapper {
@@ -92,11 +106,41 @@ body.loaded .story h2 {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .text-content {
     flex: 1;
     padding-right: 40px;
+    max-width: 600px; /* Limit width to improve layout */
+}
+
+.text-content h2 {
+    font-size: 2.5rem; /* Increased font size for heading */
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.explore-tasks-btn {
+    background-color: #fff;
+    color: #2e8b57; /* Match the green */
+    padding: 12px 25px;
+    border: 2px solid #2e8b57; /* Add border */
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.explore-tasks-btn:hover {
+    background-color: #2e8b57;
+    color: white;
 }
 
 .image-content {
@@ -110,25 +154,10 @@ body.loaded .story h2 {
     border-radius: 20px;
 }
 
-.explore-tasks-btn {
-    background-color: #6B8E23;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-.explore-tasks-btn:hover {
-    background-color: #8FBC8F;
-}
-
 /* Services Section */
 .services {
     padding: 80px 20px;
-    background: #4F4F4F; /* Updated to grey */
+    background: linear-gradient(135deg, #6b8e23, #3d9970); /* Olive green gradient */
     color: white;
     text-align: center;
 }
@@ -136,6 +165,8 @@ body.loaded .story h2 {
 .services h2 {
     margin-bottom: 40px;
     font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Enhance heading */
 }
 
 .service-cards {
@@ -145,8 +176,7 @@ body.loaded .story h2 {
 }
 
 .card {
-    background-color: #6B8E23; /* Updated to olive green */
-    color: white;
+    background-color: #555;
     padding: 20px;
     border-radius: 15px;
     transition: transform 0.3s ease;
@@ -161,7 +191,7 @@ body.loaded .story h2 {
 }
 
 .learn-more-btn {
-    background-color: #8FBC8F; /* Theme-related color */
+    background-color: #6B8E23;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -173,7 +203,7 @@ body.loaded .story h2 {
 }
 
 .learn-more-btn:hover {
-    background-color: #A9C7A9;
+    background-color: #8FBC8F;
 }
 
 /* Story Section */
@@ -187,18 +217,6 @@ body.loaded .story h2 {
 .story h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-.story p {
-    max-width: 600px; /* Set max width to control line breaks */
-    margin: 0 auto 30px;
-    line-height: 1.6;
-    font-size: 1.1rem; /* Adjust font size for readability */
-}
-
-.story-learn {
-    display: flex;
-    justify-content: center; /* Center the button */
 }
 
 .story-learn .learn-btn {
@@ -216,23 +234,34 @@ body.loaded .story h2 {
 }
 
 /* Insights Section */
+.insights {
+    padding: 80px 20px;
+    background-color: #1B1B1B;
+    color: white;
+    text-align: center;
+}
+
+.insights h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
 .insight-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px; /* Adjust gap between items */
+    gap: 40px;
 }
 
 .insight {
     background-color: #333;
-    padding: 15px; /* Reduced padding */
+    padding: 20px;
     border-radius: 15px;
-    transform: scale(0.95); /* Reduce overall size */
 }
 
 .insight img {
     max-width: 100%;
     border-radius: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .insight h3 {
