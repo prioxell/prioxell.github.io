@@ -3,136 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prioxell</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"> <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 1000, // Duration of animations in milliseconds
-                easing: 'ease-in-out', // Easing function for animations
-            });
-        });
-    </script>
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to bottom, #1E1E1E, #2B2B2B);
+            color: #FFFFFF;
+        }
+
+        /* Brand Logo (Top Left) */
+        .brand-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 10px;
+            color: #6B8E23;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+            z-index: 10;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('abc1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+
+        /* Mobile Specific Styles for Hero Section */
+        @media (max-width: 768px) {
+            .hero {
+                background-size: contain;
+                background-attachment: scroll;
+                background-position: top center;
+                background-image: url('mobile-friendly-image.jpg'); /* Use a mobile-friendly image */
+                padding: 60px 20px;
+                min-height: 70vh;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem; /* Reduce the font size */
+            }
+
+            .hero h2 {
+                font-size: 1.2rem; /* Reduce the font size */
+            }
+
+            .explore-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Hero Text Styling */
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .hero h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            margin-top: 20px;
+            font-weight: 300;
+        }
+
+        .explore-btn {
+            padding: 10px 20px;
+            background-color: #6B8E23;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+
+        .explore-btn:hover {
+            background-color: #556B2F;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            background-color: #1E1E1E;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            color: #6B8E23;
+            margin-bottom: 30px;
+        }
+
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #6B8E23, #8FBC8F);
+            padding: 30px;
+            text-align: center;
+            color: #fff;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            opacity: 0.9;
+        }
+
+        /* Story Section */
+        .story {
+            padding: 60px 30px;
+            background-color: #2B2B2B;
+            text-align: left;
+            border-left: 5px solid #6B8E23;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .story h2 {
+            font-size: 2.2rem;
+            color: #6B8E23;
+            margin-bottom: 20px;
+        }
+
+        /* Insights Section */
+        .insights {
+            padding: 50px 20px;
+            background-color: #1E1E1E;
+            text-align: center;
+        }
+
+        .insights h2 {
+            font-size: 2.5rem;
+            color: #6B8E23;
+            margin-bottom: 30px;
+        }
+
+        .insight-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .insight {
+            width: 320px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .insight:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .insight img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .insight img:hover {
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer .social-icons a {
+            color: #6B8E23;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+            color: #8FBC8F;
+            transform: scale(1.2);
+        }
+    </style>
 </head>
-<body>
+<body class="loaded">
+    <div class="brand-logo">LOGO</div>
 
-    <!-- Logo Section (Brand Name) -->
-    <div class="brand-logo">
-        Prioxell
-    </div>
+    <section class="hero">
+        <h1>Welcome to Our Site<span>We Create Solutions</span></h1>
+        <h2>Your success starts here</h2>
+        <button class="explore-btn">Explore Now</button>
+    </section>
 
-    <!-- Hero Section -->
-    <div class="hero">
-    <div class="hero-system-content">
-        <h1>Your Desktop Hero Title</h1>
-        <h2>Your Desktop Subheading</h2>
-    </div>
-
-    <div class="hero-mobile-content">
-        <h1>Your Mobile Hero Title</h1>
-        <p>Your mobile subheading or alternative content that looks better on mobile.</p>
-    </div>
-</div>
-    
-<!-- Organize Your Tasks Section -->
-<section class="organize-tasks">
-    <div class="content-wrapper">
-        <div class="text-content">
-            <h2>Organize Your Tasks, Simplify Your Life, Achieve Greatness</h2>
-            <p>Unlock your full potential by organizing your daily tasks in a way that reduces overwhelm and increases productivity. With our simple yet effective tools, you can focus on what truly matters and achieve more every day.</p>
-            <button class="explore-tasks-btn">Discover More</button>
-        </div>
-        <div class="image-content">
-            <img src="WhatsApp_Image_2024-10-20_at_11.47.58_AM-removebg_20241020_115750529.jpg" alt="Task Organization Image">
-        </div>
-    </div>
-</section>
-
-    <!-- Services Section -->
     <section class="services">
-        <h2>Services</h2>
+        <h2>Our Services</h2>
         <div class="service-cards">
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <h3>Our Product</h3>
-                <p>Discover our Wooden To-Do List Holder, designed to organize your daily tasks with ease and functionality.</p>
-                <a href="/product/" class="learn-more-btn">Learn More</a>
+            <div class="card">
+                <h3>Service One</h3>
+                <p>Description of Service One</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="400">
-                <h3>Prioxell's Formula</h3>
-                <p>Explore our research-backed method, Prioxell’s Formula, for living a more productive and balanced life.</p>
-                <a href="/formula/" class="learn-more-btn">Learn More</a>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="600">
-                <h3>How to Use a To Do List</h3>
-                <p> Learn simple and effective ways to master your to-do list for better time management.</p>
-                <a href="/todolist/" class="learn-more-btn">Learn More</a>
+            <div class="card">
+                <h3>Service Two</h3>
+                <p>Description of Service Two</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Story Section -->
     <section class="story">
-        <h2>Discover Our Story</h2>
-        <p>
-            At Prioxell, we believe in the power of simplicity. Our mission is to streamline productivity and help individuals achieve their full potential. Through our unique, research-driven approach, we provide tools that tackle common challenges like procrastination and lack of focus. Let us guide you on your journey to success, one simplified step at a time.
-        </p>
-        <div class="story-learn">
-            <a href="story.html" class="learn-btn">Learn More</a>
-        </div>
+        <h2>Our Story</h2>
+        <p>We started with a vision to transform the industry with innovative solutions.</p>
+        <button class="learn-btn">Learn More</button>
     </section>
 
-    <!-- Insights Section -->
     <section class="insights">
         <h2>Insights</h2>
         <div class="insight-grid">
-            <div class="insight" data-aos="fade-up" data-aos-delay="200">
-                <img src="1.png" alt="Insight 1">
-                <h3>Achieve Your Potential: Secrets to...</h3>
-                <p>In the fast-paced world of business and productivity, achieving your full potential...</p>
-                <a href="product.html" class="learn-more-btn">Learn More</a>
+            <div class="insight">
+                <img src="insight1.jpg" alt="Insight 1">
+                <h3>Insight Title 1</h3>
+                <p>Short description of Insight 1</p>
             </div>
-            <div class="insight" data-aos="fade-up" data-aos-delay="400">
-                <img src="2.png" alt="Insight 2">
-                <h3>Premium Solutions for Success...</h3>
-                <p>In the fast-paced world we live in today, maximizing productivity and achieving...</p>
-                <a href="formula.html" class="learn-more-btn">Learn More</a>
-            </div>
-            <div class="insight" data-aos="fade-up" data-aos-delay="600">
-                <img src="3.png" alt="Insight 3">
-                <h3>Maximize Productivity: Strategies...</h3>
-                <p>When it comes to achieving maximum productivity in both individual and business...</p>
-                <a href="todolist.html" class="learn-more-btn">Learn More</a>
+            <div class="insight">
+                <img src="insight2.jpg" alt="Insight 2">
+                <h3>Insight Title 2</h3>
+                <p>Short description of Insight 2</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-    <p>&copy; 2024 Prioxell. All Rights Reserved.</p>
-    <div class="contact-details">
-        <p>Phone: +123 456 7890</p>
-        <p>Email: contact@prioxell.com</p>
-    </div>
-    <div class="social-icons">
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-x"></i></a>
-        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- LinkedIn icon -->
-        <a href="https://www.quora.com" target="_blank"><i class="fab fa-quora"></i></a>
-        <a href="https://www.reddit.com" target="_blank"><i class="fab fa-reddit"></i></a>
-    </div>
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <p>&copy; 2024 Our Company. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
