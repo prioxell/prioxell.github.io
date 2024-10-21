@@ -1,0 +1,28 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Block sensitive directories (if they exist) from being indexed
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /login/
+Disallow: /register/
+Disallow: /wp-admin/
+
+# Block files you don't want indexed (add more if necessary)
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /*.git
+Disallow: /*.env
+
+# Prevent indexing of all URL parameters
+Disallow: /*?*
+
+# Allow bots to crawl your CSS and JS files for better rendering
+Allow: /*.css
+Allow: /*.js
+
+# Sitemap URL for better SEO
+Sitemap: https://www.prioxell.com/sitemap.xml
