@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prioxell To-Do List Holder</title>
-    <link rel="stylesheet" href="../css/buy.css"> <!-- Link to the correct CSS file -->
+    <link rel="stylesheet" href="../css/buy.css">
 </head>
 <body>
 
-    <!-- Main Container -->
     <div class="product-container">
-        <h1>Prioxell To-Do List Holder</h1> <!-- Main Heading -->
+        <h1>Prioxell To-Do List Holder</h1>
 
         <div class="product-details">
-            <!-- Left Column: Product Image Slider -->
+            <!-- Product Image Slider -->
             <div class="product-image-slider">
-                <img id="mainImage" src="../photos/image1.webp" alt="Product Image" class="main-img"> <!-- Default Image -->
-
-                <!-- Thumbnail Selector -->
+                <img id="mainImage" src="../photos/image1.webp" alt="Product Image" class="main-img">
                 <div class="thumbnail-container">
                     <img src="../photos/image1.webp" alt="Product Image 1" class="thumbnail" onclick="changeImage('../photos/image1.webp')">
                     <img src="../photos/image2.webp" alt="Product Image 2" class="thumbnail" onclick="changeImage('../photos/image2.webp')">
@@ -26,7 +23,7 @@
                 </div>
             </div>
 
-            <!-- Right Column: Product Info -->
+            <!-- Product Info -->
             <div class="product-info">
                 <h2>Stay Organized, Stay Productive</h2>
                 <p>The Prioxell To-Do List Holder is designed to boost your productivity by helping you organize tasks effectively.</p>
@@ -34,15 +31,14 @@
                     <li><strong>Cost:</strong> $29.99</li>
                     <li><strong>Features:</strong> Sleek design, Durable, Lightweight</li>
                 </ul>
-                <a href="#" class="buy-now-btn">Buy Now</a> <!-- Buy Now button -->
+                <a href="#" class="buy-now-btn">Buy Now</a>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript for Image Change -->
     <script>
         function changeImage(imageSrc) {
-            document.getElementById("mainImage").src = imageSrc; // Changes the main image to the clicked thumbnail image
+            document.getElementById("mainImage").src = imageSrc;
         }
     </script>
 
