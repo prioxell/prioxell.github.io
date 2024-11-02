@@ -11,36 +11,48 @@
     <div class="product-container">
         <h1>Prioxell To-Do List Holder</h1>
 
-        <div class="product-details">
-            <!-- Product Image Slider -->
-            <div class="product-image-slider">
-                <img id="mainImage" src="../photos/image1.webp" alt="Product Image" class="main-img">
-                <div class="thumbnail-container">
-                    <img src="../photos/image1.webp" alt="Product Image 1" class="thumbnail" onclick="changeImage('../photos/image1.webp')">
-                    <img src="../photos/image2.webp" alt="Product Image 2" class="thumbnail" onclick="changeImage('../photos/image2.webp')">
-                    <img src="../photos/image3.webp" alt="Product Image 3" class="thumbnail" onclick="changeImage('../photos/image3.webp')">
-                    <img src="../photos/image4.webp" alt="Product Image 4" class="thumbnail" onclick="changeImage('../photos/image4.webp')">
-                </div>
+        <!-- Row 1: Photo Left, Text Right -->
+        <div class="row">
+            <div class="photo">
+                <img src="../photos/image1.webp" alt="To-Do List Holder - Main View">
             </div>
-
-            <!-- Product Info -->
-            <div class="product-info">
-                <h2>Stay Organized, Stay Productive</h2>
-                <p>The Prioxell To-Do List Holder is designed to boost your productivity by helping you organize tasks effectively.</p>
-                <ul>
-                    <li><strong>Cost:</strong> $29.99</li>
-                    <li><strong>Features:</strong> Sleek design, Durable, Lightweight</li>
-                </ul>
-                <a href="#" class="buy-now-btn">Buy Now</a>
+            <div class="text">
+                <h2>Organize Your Day, Effortlessly</h2>
+                <p>The Prioxell To-Do List Holder is crafted to help you manage tasks efficiently and stay on top of your goals.</p>
             </div>
         </div>
-    </div>
 
-    <script>
-        function changeImage(imageSrc) {
-            document.getElementById("mainImage").src = imageSrc;
-        }
-    </script>
+        <!-- Row 2: Text Left, Photo Right -->
+        <div class="row reverse">
+            <div class="text">
+                <h2>Feature-Rich & User-Friendly</h2>
+                <ul>
+                    <li>Sleek and modern design that complements any workspace.</li>
+                    <li>Lightweight and durable for easy handling.</li>
+                    <li>Integrated sections for priority tasks and quick notes.</li>
+                </ul>
+            </div>
+            <div class="photo">
+                <img src="../photos/image2.webp" alt="Feature Display">
+            </div>
+        </div>
+
+        <!-- Row 3: Photo Left, Text Right -->
+        <div class="row">
+            <div class="photo">
+                <img src="../photos/image3.webp" alt="Ergonomic Design View">
+            </div>
+            <div class="text">
+                <h2>Boost Productivity</h2>
+                <p>The To-Do List Holder isn’t just an organizer; it's designed to streamline your workflow and keep you focused.</p>
+            </div>
+        </div>
+
+        <!-- Row 4: Centered Call to Action -->
+        <div class="cta-row">
+            <a href="#" class="buy-now-btn">Buy Now for $29.99</a>
+        </div>
+    </div>
 
 </body>
 </html>
