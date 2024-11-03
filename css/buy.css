@@ -80,8 +80,8 @@ h1 {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .row {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text on mobile */
     }
 
     .text h2 {
@@ -93,7 +93,7 @@ h1 {
     }
 
     .photo img {
-        max-height: 300px;
+        max-height: 300px; /* Limit image height on smaller screens */
     }
 
     .buy-now-btn {
