@@ -8,36 +8,65 @@
 </head>
 <body>
 
+    <!-- Main Container -->
     <div class="product-container">
-        <h1 class="animated-title">Prioxell To-Do List Holder</h1>
+        <h1>Prioxell To-Do List Holder</h1>
 
-        <!-- Row 1: Image Left, Text Right -->
-        <div class="row first-row">
-            <div class="photo">
-                <img src="../photos/image1.webp" alt="To-Do List Holder - Main View" class="animated-image">
+        <!-- Product Details Section -->
+        <div class="product-details">
+            <!-- Left Column: Product Image Slider -->
+            <div class="product-image-slider">
+                <img id="mainImage" src="../photos/image1.webp" alt="Product Image" class="main-img">
+
+                <!-- Thumbnail Selector -->
+                <div class="thumbnail-container">
+                    <img src="../photos/image1.webp" alt="Image 1" class="thumbnail" onclick="changeImage('../photos/image1.webp')">
+                    <img src="../photos/image2.webp" alt="Image 2" class="thumbnail" onclick="changeImage('../photos/image2.webp')">
+                    <img src="../photos/image3.webp" alt="Image 3" class="thumbnail" onclick="changeImage('../photos/image3.webp')">
+                    <img src="../photos/image4.webp" alt="Image 4" class="thumbnail" onclick="changeImage('../photos/image4.webp')">
+                </div>
             </div>
-            <div class="text">
-                <h2>Organize Your Day, Effortlessly</h2>
-                <p>The Prioxell To-Do List Holder is crafted to help you manage tasks efficiently and stay on top of your goals.</p>
+
+            <!-- Right Column: Product Info -->
+            <div class="product-info">
+                <h2>Stay Organized, Stay Productive</h2>
+                <p>The Prioxell To-Do List Holder is designed to boost your productivity by helping you organize tasks effectively.</p>
+                <ul>
+                    <li><strong>Cost:</strong> $29.99</li>
+                    <li><strong>Features:</strong> Sleek design, Durable, Lightweight</li>
+                </ul>
+                <a href="#" class="buy-now-btn">Buy Now</a>
             </div>
         </div>
 
-        <!-- Row 2: Text Left, Image Right on Desktop, Image on Top in Mobile -->
-        <div class="row second-row">
-            <div class="text">
-                <h2>Feature-Rich & User-Friendly</h2>
-                <p>This sleek design complements any workspace. It’s lightweight and easy to handle, perfect for both home and office setups.</p>
+        <!-- Features Section -->
+        <div class="features-section">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <img src="../photos/image1.webp" alt="Feature 1 Image" class="feature-img">
+                <div class="feature-text">
+                    <h2>Feature 1: Efficient Task Management</h2>
+                    <p>This product helps you categorize and manage your tasks effortlessly, keeping your workspace neat and organized.</p>
+                </div>
             </div>
-            <div class="photo">
-                <img src="../photos/image2.webp" alt="Side View of To-Do List Holder" class="animated-image">
+            
+            <!-- Feature 2 with reversed layout -->
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <h2>Feature 2: Durable and Lightweight Design</h2>
+                    <p>Built to last with quality materials, the Prioxell To-Do List Holder is both lightweight and sturdy for everyday use.</p>
+                </div>
+                <img src="../photos/image2.webp" alt="Feature 2 Image" class="feature-img">
             </div>
-        </div>
-
-        <!-- Row 3: Buy Now Button Centered -->
-        <div class="cta-row">
-            <a href="#" class="buy-now-btn">Buy Now for $29.99</a>
         </div>
     </div>
+
+    <!-- JavaScript for Image Change -->
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById("mainImage").src = imageSrc;
+        }
+    </script>
 
 </body>
 </html>
