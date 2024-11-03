@@ -60,26 +60,6 @@ h1 {
     line-height: 1.6;
 }
 
-.text ul {
-    list-style: none;
-    padding: 0;
-    color: #666;
-}
-
-.text ul li {
-    margin: 10px 0;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-}
-
-.text ul li::before {
-    content: "•";
-    color: #007bff;
-    font-size: 1.2em;
-    margin-right: 8px;
-}
-
 /* Call-to-Action Button */
 .cta-row {
     text-align: center;
@@ -116,7 +96,7 @@ h1 {
         font-size: 1.5em;
     }
 
-    .text p, .text ul li {
+    .text p {
         font-size: 0.9em;
     }
 
