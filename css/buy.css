@@ -32,10 +32,6 @@ h1 {
     margin: 20px 0;
 }
 
-.row.reverse {
-    flex-direction: row-reverse;
-}
-
 .photo, .text {
     flex: 1;
 }
@@ -86,10 +82,6 @@ h1 {
     .row {
         flex-direction: column;
         text-align: center;
-    }
-
-    .row.reverse {
-        flex-direction: column;
     }
 
     .text h2 {
