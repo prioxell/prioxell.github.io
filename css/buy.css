@@ -32,6 +32,10 @@ h1 {
     margin: 20px 0;
 }
 
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
 .photo, .text {
     flex: 1;
 }
@@ -79,17 +83,9 @@ h1 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .row {
+    .row, .row.reverse {
         flex-direction: column; /* Stack elements vertically */
-        text-align: center; /* Center align text on mobile */
-    }
-
-    .text h2 {
-        font-size: 1.5em;
-    }
-
-    .text p {
-        font-size: 0.9em;
+        text-align: center;
     }
 
     .photo img {
