@@ -32,10 +32,6 @@ h1 {
     margin: 20px 0;
 }
 
-.row.reverse {
-    flex-direction: row-reverse;
-}
-
 .photo, .text {
     flex: 1;
 }
@@ -45,6 +41,15 @@ h1 {
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Order Styling for Desktop */
+.first-row .photo {
+    order: 1; /* Image first for the first row */
+}
+
+.second-row .text {
+    order: 1; /* Text first in the second row for desktop */
 }
 
 /* Text Styling */
@@ -83,9 +88,14 @@ h1 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .row, .row.reverse {
+    .row {
         flex-direction: column; /* Stack elements vertically */
-        text-align: center;
+    }
+
+    /* Make sure images stack on top of text in mobile */
+    .first-row .photo,
+    .second-row .photo {
+        order: -1; /* Image on top in both rows */
     }
 
     .photo img {
