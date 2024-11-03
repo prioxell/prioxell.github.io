@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #f4f4f9;
+    overflow-x: hidden;
 }
 
 .product-container {
@@ -15,6 +16,7 @@ body {
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 h1 {
@@ -22,6 +24,18 @@ h1 {
     color: #333;
     font-size: 2.2em;
     margin-bottom: 20px;
+    animation: titleBounce 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes titleBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 /* Row Layout */
@@ -41,15 +55,27 @@ h1 {
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in effect for images */
+.animated-image {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
 }
 
 /* Specific Order Styling for Desktop */
 .first-row .photo {
-    order: 1; /* Image first for the first row */
+    order: 1;
 }
 
 .second-row .text {
-    order: 1; /* Text first in the second row for desktop */
+    order: 1;
 }
 
 /* Text Styling */
@@ -63,6 +89,7 @@ h1 {
     font-size: 1em;
     color: #555;
     line-height: 1.6;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Call-to-Action Button */
@@ -79,31 +106,28 @@ h1 {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect for Buy Now button */
 .buy-now-btn:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .row {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column;
     }
 
-    /* Make sure images stack on top of text in mobile */
     .first-row .photo,
     .second-row .photo {
-        order: -1; /* Image on top in both rows */
+        order: -1;
     }
 
     .photo img {
-        max-height: 300px; /* Limit image height on smaller screens */
-    }
-
-    .buy-now-btn {
-        padding: 10px 20px;
+        max-height: 300px;
     }
 }
 
