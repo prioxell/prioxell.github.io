@@ -1,111 +1,63 @@
 body {
+  font-family: sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #1e1e2f, #252540, #2f2f56);
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  min-height: 100vh;
-  box-sizing: border-box;
-}
-
-.notice {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background: #ffcc00;
-  color: #000;
-  text-align: center;
-  font-weight: 600;
-  padding: 10px;
-  font-size: 14px;
-}
-
-.container {
-  max-width: 500px;
-  text-align: center;
-}
-
-.logo {
-  width: 120px;
-  margin: 0 auto 20px auto;
-}
-
-.headline {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.subtext {
-  font-size: 16px;
-  color: #ccc;
-  margin-bottom: 30px;
+  padding: 0;
   line-height: 1.6;
 }
 
-.cta-buttons {
+header.coming-soon-banner {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.hero {
+  padding: 2rem 1rem;
+}
+
+.intro, .profile, .product {
+  margin-bottom: 2rem;
+}
+
+.connect-buttons {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 1rem;
 }
 
-a.whatsapp-btn,
-a.linkedin-btn {
+.btn {
   display: inline-block;
-  padding: 12px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
   text-decoration: none;
   color: white;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  font-weight: bold;
 }
 
-a.whatsapp-btn {
-  background-color: #25D366;
+.linkedin {
+  background-color: #0077b5;
 }
 
-a.linkedin-btn {
-  background-color: #0A66C2;
+.whatsapp {
+  background-color: #25d366;
 }
 
-a.whatsapp-btn:hover {
-  background-color: #1ebc5f;
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
 }
 
-a.linkedin-btn:hover {
-  background-color: #004182;
-}
-
-.profile {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.profile a {
-  color: #77bfff;
-  text-decoration: none;
-}
-
-.profile a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile Optimized */
-@media (max-width: 600px) {
-  .headline {
-    font-size: 20px;
-  }
-
-  .subtext {
-    font-size: 15px;
-  }
-
-  .cta-buttons a {
-    font-size: 14px;
-    padding: 10px;
+@media (min-width: 600px) {
+  .connect-buttons {
+    flex-direction: row;
   }
 }
