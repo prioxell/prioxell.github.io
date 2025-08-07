@@ -16,7 +16,12 @@
     }
 
     body {
-      background: url('LinkedIn_Banner_Image.jpg') no-repeat center center/cover;
+      background: linear-gradient(
+          rgba(0, 23, 50, 0.8), 
+          rgba(0, 23, 50, 0.8)
+        ),
+        url('LinkedIn_Banner_Image.jpg') no-repeat center center / cover;
+      background-color: #001732; /* fallback solid color */
       color: white;
       min-height: 100vh;
       display: flex;
@@ -25,12 +30,11 @@
       justify-content: center;
       text-align: center;
       padding: 2rem;
-      backdrop-filter: brightness(0.7);
     }
 
     .logo {
       max-width: 180px;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     h1 {
@@ -59,6 +63,7 @@
       font-size: 1rem;
       font-weight: 600;
       transition: all 0.3s ease;
+      display: inline-block;
     }
 
     .btn-whatsapp {
@@ -100,7 +105,7 @@
 
   <div class="btn-group">
     <a href="https://wa.me/916235225662" class="btn btn-whatsapp" target="_blank">Chat on WhatsApp</a>
-    <a href="https://www.linkedin.com/in/irfadh/" target="_blank">Connect on LinkedIn</a>
+    <a href="https://www.linkedin.com/in/irfadh/" class="btn btn-linkedin" target="_blank">Connect on LinkedIn</a>
   </div>
 
 </body>
