@@ -1,117 +1,111 @@
-/* Global Styles */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #003366;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #1e1e2f, #252540, #2f2f56);
   color: #ffffff;
-  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-/* Logo and Header */
-header {
-  background: linear-gradient(135deg, #00b27f, #2188b6);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.notice {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #ffcc00;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 500px;
+  text-align: center;
 }
 
 .logo {
-  height: 50px;
+  width: 120px;
+  margin: 0 auto 20px auto;
 }
 
-nav ul {
-  list-style: none;
+.headline {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
   display: flex;
-  gap: 2rem;
-  margin: 0;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #27e1a3;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, #00b27f, #2188b6, #003366);
-  text-align: center;
-  padding: 4rem 2rem;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 800;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Section Styling */
-section {
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #00b27f;
+a.whatsapp-btn,
+a.linkedin-btn {
   display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
-ul li {
-  margin-bottom: 1rem;
+a.whatsapp-btn {
+  background-color: #25D366;
 }
 
-/* Product Section */
-.coming-soon {
-  border: 2px dashed #00b27f;
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.03);
+a.linkedin-btn {
+  background-color: #0A66C2;
 }
 
-.coming-soon h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #27e1a3;
+a.whatsapp-btn:hover {
+  background-color: #1ebc5f;
 }
 
-.coming-soon p {
-  font-size: 1rem;
+a.linkedin-btn:hover {
+  background-color: #004182;
 }
 
-/* Contact Section */
-#contact a {
-  color: #00b27f;
+.profile {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.profile a {
+  color: #77bfff;
   text-decoration: none;
 }
 
-#contact a:hover {
+.profile a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #001f3f;
-  color: #aaa;
-  font-size: 0.9rem;
+/* Mobile Optimized */
+@media (max-width: 600px) {
+  .headline {
+    font-size: 20px;
+  }
+
+  .subtext {
+    font-size: 15px;
+  }
+
+  .cta-buttons a {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
