@@ -3,14 +3,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #0e0f11;
+  background-color: #003366;
   color: #ffffff;
   line-height: 1.6;
 }
 
 /* Logo and Header */
 header {
-  background: linear-gradient(to right, #00f260, #0575e6);
+  background: linear-gradient(135deg, #00b27f, #2188b6);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,12 +37,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #c1f4d3;
+  color: #27e1a3;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #00f260, #0575e6);
+  background: linear-gradient(135deg, #00b27f, #2188b6, #003366);
   text-align: center;
   padding: 4rem 2rem;
   color: white;
@@ -70,7 +70,7 @@ section {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #00f260;
+  border-bottom: 2px solid #00b27f;
   display: inline-block;
 }
 
@@ -80,7 +80,7 @@ ul li {
 
 /* Product Section */
 .coming-soon {
-  border: 2px dashed #00f260;
+  border: 2px dashed #00b27f;
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
@@ -90,7 +90,7 @@ ul li {
 .coming-soon h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #00f260;
+  color: #27e1a3;
 }
 
 .coming-soon p {
@@ -99,7 +99,7 @@ ul li {
 
 /* Contact Section */
 #contact a {
-  color: #00f260;
+  color: #00b27f;
   text-decoration: none;
 }
 
@@ -111,7 +111,7 @@ ul li {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #0b0c0d;
+  background-color: #001f3f;
   color: #aaa;
   font-size: 0.9rem;
 }
