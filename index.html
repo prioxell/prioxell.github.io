@@ -3,45 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prioxell – A Framework for Intentional Living</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Prioxell | Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: url('LinkedIn_Banner_Image.jpg') no-repeat center center/cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      backdrop-filter: brightness(0.7);
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .btn-linkedin {
+      background-color: #0077B5;
+      color: white;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .logo {
+        max-width: 140px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="coming-soon-banner">
-    <div class="header-container">
-      <img src="Prioxell_Logo_OG_black_copy_2[2].png" alt="Prioxell Logo" class="logo" />
-      <p>🚧 We're building something meaningful – <strong>Coming Soon</strong></p>
-    </div>
-  </header>
 
-  <main class="hero">
-    <section class="intro">
-      <h1>Do You Want to Scale Your Life & Business?</h1>
-      <p>Prioxell is a framework to organize thoughts into clear, purposeful action.</p>
-      <p>Learn from the people building systems and tools for a new era of focus and productivity.</p>
-    </section>
+  <img src="Prioxell_Logo_OG_White.png" alt="Prioxell Logo" class="logo" />
 
-    <section class="profile">
-      <h2>Meet the Founder</h2>
-      <div class="connect-buttons">
-        <a href="https://www.linkedin.com/in/muhammedirfadh" target="_blank" class="btn linkedin">
-          <i class="fab fa-linkedin"></i> Connect on LinkedIn
-        </a>
-        <a href="https://wa.me/919496969496" target="_blank" class="btn whatsapp">
-          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-        </a>
-      </div>
-    </section>
+  <h1>We're Almost Ready</h1>
+  <p>Something meaningful is taking shape. Stay tuned.</p>
 
-    <section class="product">
-      <h2>🧠 Thought Organize Kit</h2>
-      <p>Launching Soon – Stay Tuned for the Productivity Revolution</p>
-    </section>
-  </main>
+  <div class="btn-group">
+    <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" target="_blank">Chat on WhatsApp</a>
+    <a href="https://linkedin.com/in/YOURUSERNAME" class="btn btn-linkedin" target="_blank">Connect on LinkedIn</a>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Prioxell. All rights reserved.</p>
-  </footer>
 </body>
 </html>
